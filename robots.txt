@@ -1,1 +1,4 @@
-https://www.uttarakhandsourcing.com/robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://www.uttarakhandsourcing.com/sitemap.xml
