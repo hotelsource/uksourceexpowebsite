@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Glint Media Group — Uttarakhand's B2B Expansion Platform</title>
+<meta name="description" content="Glint Media Group: 13 years of B2B exhibition expertise. Founded by Ujjwal Gupta, acquired by Messe Frankfurt 2013. Now building Uttarakhand's permanent B2B sourcing platform.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.uttarakhandsourcing.com/about.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --saffron: #E8761A;
+  --saffron-light: #F59B3D;
+  --forest: #1A3A2A;
+  --forest-mid: #2C5F3E;
+  --snow: #F5F0E8;
+  --charcoal: #1A1A1A;
+  --gold: #C9A84C;
+  --gold-light: #E2C97A;
+  --white: #FFFFFF;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+body { background:var(--forest); color:var(--snow); font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif; overflow-x:hidden; -webkit-font-smoothing:antialiased; }
+body::before { content:''; position:fixed; inset:0; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events:none; z-index:1000; opacity:0.4; }
+
+/* NAV */
+nav { position:fixed; top:0; width:100%; z-index:999; padding:18px 48px; display:flex; justify-content:space-between; align-items:center; background:rgba(26,58,42,0.95); backdrop-filter:blur(12px); border-bottom:1px solid rgba(201,168,76,0.2); }
+.nav-logo { font-family:'Bebas Neue',Impact,sans-serif; font-size:22px; letter-spacing:3px; color:var(--gold); }
+.nav-logo span { color:var(--saffron); }
+.nav-links { display:flex; gap:28px; list-style:none; align-items:center; }
+.nav-links a { color:var(--snow); text-decoration:none; font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; opacity:0.8; transition:all 0.2s; }
+.nav-links a:hover, .nav-links a.active { opacity:1; color:var(--gold); }
+.nav-cta { background:var(--saffron)!important; color:#fff!important; opacity:1!important; padding:10px 20px; border-radius:2px; }
+.nav-cta:hover { background:var(--saffron-light)!important; }
+.nav-menu-btn { display:none; background:none; border:none; cursor:pointer; padding:4px; flex-direction:column; gap:5px; }
+.nav-menu-btn span { display:block; width:24px; height:2px; background:var(--snow); border-radius:2px; }
+.nav-close-btn { display:none; background:transparent; border:none; color:var(--snow); font-size:32px; cursor:pointer; padding:0; width:40px; height:40px; align-items:center; justify-content:center; position:absolute; top:20px; right:20px; opacity:0.7; }
+@media(max-width:900px){ nav{padding:16px 20px;} .nav-menu-btn{display:flex;} .nav-close-btn{display:flex!important;} .nav-links{display:none;position:fixed;top:0;right:0;width:280px;height:100vh;background:linear-gradient(180deg,#1A3A2A 0%,#0F2419 100%);flex-direction:column;align-items:flex-start;padding:80px 24px 24px;gap:0;z-index:9999;box-shadow:-4px 0 24px rgba(0,0,0,0.3);} .nav-links.open{display:flex!important;} .nav-links li{width:100%;} .nav-links a{width:100%;padding:16px 20px;border-bottom:1px solid rgba(245,240,232,0.1);font-size:15px;display:block;} .nav-cta{margin-top:12px!important;text-align:center;} }
+
+/* SECTION UTILS */
+.section-label { font-size:11px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:var(--saffron); margin-bottom:16px; display:flex; align-items:center; gap:10px; }
+.section-label::before { content:''; display:block; width:32px; height:2px; background:var(--saffron); }
+.section-title { font-family:'Bebas Neue',Impact,sans-serif; font-size:clamp(36px,5vw,64px); line-height:1; letter-spacing:1px; color:var(--snow); margin-bottom:20px; }
+.section-title .accent { color:var(--saffron); }
+.section-title .gold { color:var(--gold); }
+.section-divider { height:1px; background:linear-gradient(90deg,transparent,rgba(232,118,26,0.3),transparent); }
+.fade-up { opacity:0; transform:translateY(24px); transition:all 0.7s cubic-bezier(0.16,1,0.3,1); }
+.fade-up.visible { opacity:1; transform:translateY(0); }
+
+/* HERO */
+.hero { min-height:100vh; display:grid; grid-template-columns:1fr 1fr; position:relative; overflow:hidden; }
+.hero-bg { position:absolute; inset:0; background:radial-gradient(ellipse 80% 60% at 70% 40%, rgba(232,118,26,0.1) 0%, transparent 60%), radial-gradient(ellipse 60% 80% at 10% 80%, rgba(44,95,62,0.8) 0%, transparent 50%), linear-gradient(135deg, var(--forest) 0%, #0F2A1A 100%); }
+.hero-mountain { position:absolute; bottom:0; right:0; width:55%; height:80%; opacity:0.05; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cpolygon points='0,500 200,100 400,300 500,50 800,500' fill='%23F5F0E8'/%3E%3C/svg%3E") no-repeat bottom right; background-size:contain; }
+.hero-left { position:relative; z-index:2; display:flex; flex-direction:column; justify-content:center; padding:120px 64px 80px; }
+.hero-eyebrow { display:inline-flex; align-items:center; gap:10px; background:rgba(201,168,76,0.15); border:1px solid rgba(201,168,76,0.4); padding:8px 18px; border-radius:2px; font-size:11px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:28px; width:fit-content; }
+.hero-eyebrow::before { content:''; width:6px; height:6px; border-radius:50%; background:var(--saffron); }
+.hero-h1 { font-family:'Bebas Neue',Impact,sans-serif; font-size:clamp(64px,8vw,100px); line-height:0.92; letter-spacing:2px; color:var(--snow); margin-bottom:8px; }
+.hero-h1 .accent { color:var(--saffron); }
+.hero-h1 .gold { color:var(--gold); }
+.hero-h1 .thin { display:block; font-family:'Playfair Display',Georgia,serif; font-style:italic; font-size:clamp(18px,2vw,24px); color:var(--gold-light); font-weight:400; letter-spacing:0; margin-top:8px; line-height:1.4; }
+.hero-desc { font-size:15px; line-height:1.8; color:rgba(245,240,232,0.7); max-width:480px; margin-bottom:40px; }
+.hero-desc strong { color:var(--snow); }
+.hero-ctas { display:flex; gap:16px; flex-wrap:wrap; }
+.btn-primary { background:var(--saffron); color:#fff; padding:16px 32px; font-size:13px; font-weight:600; letter-spacing:2px; text-transform:uppercase; text-decoration:none; border-radius:2px; transition:all 0.2s; border:2px solid var(--saffron); }
+.btn-primary:hover { background:transparent; color:var(--saffron); }
+.btn-outline { background:transparent; color:var(--snow); padding:16px 32px; font-size:13px; font-weight:600; letter-spacing:2px; text-transform:uppercase; text-decoration:none; border-radius:2px; border:2px solid rgba(245,240,232,0.3); transition:all 0.2s; }
+.btn-outline:hover { border-color:var(--gold); color:var(--gold); }
+.hero-right { position:relative; z-index:2; display:flex; flex-direction:column; justify-content:center; padding:120px 64px 80px 32px; gap:16px; }
+.stat-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; }
+.stat-card { background:rgba(245,240,232,0.05); border:1px solid rgba(245,240,232,0.08); padding:28px 24px; transition:all 0.3s; }
+.stat-card:hover { background:rgba(232,118,26,0.1); border-color:rgba(232,118,26,0.3); }
+.stat-number { font-family:'Bebas Neue',Impact,sans-serif; font-size:52px; line-height:1; color:var(--saffron); margin-bottom:4px; }
+.stat-label { font-size:11px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:rgba(245,240,232,0.5); }
+.exit-badge { background:linear-gradient(135deg,rgba(232,118,26,0.15),rgba(44,95,62,0.4)); border:1px solid rgba(232,118,26,0.3); border-radius:4px; padding:24px 28px; display:flex; gap:16px; align-items:flex-start; }
+.exit-icon { font-size:32px; flex-shrink:0; }
+.exit-label { font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--saffron); margin-bottom:8px; }
+.exit-text { font-size:13px; color:rgba(245,240,232,0.8); line-height:1.6; }
+
+/* TIMELINE */
+.timeline-section { background:var(--charcoal); padding:100px 64px; }
+.timeline { position:relative; max-width:900px; margin:48px auto 0; }
+.timeline::before { content:''; position:absolute; left:120px; top:0; bottom:0; width:2px; background:linear-gradient(180deg,var(--saffron),var(--gold),var(--saffron)); opacity:0.3; }
+.tl-item { display:grid; grid-template-columns:120px 1fr; gap:0 40px; margin-bottom:48px; position:relative; }
+.tl-item:last-child { margin-bottom:0; }
+.tl-year { font-family:'Bebas Neue',Impact,sans-serif; font-size:18px; color:var(--gold); letter-spacing:1px; text-align:right; padding-top:2px; padding-right:24px; position:relative; }
+.tl-year::after { content:''; position:absolute; right:-9px; top:8px; width:16px; height:16px; border-radius:50%; background:var(--saffron); border:3px solid var(--charcoal); box-shadow:0 0 0 2px var(--saffron); }
+.tl-content { background:rgba(245,240,232,0.04); border:1px solid rgba(245,240,232,0.08); border-left:3px solid var(--saffron); padding:24px 28px; border-radius:4px; transition:all 0.3s; }
+.tl-content:hover { background:rgba(232,118,26,0.08); border-color:rgba(232,118,26,0.3); }
+.tl-title { font-size:18px; font-weight:700; color:var(--snow); margin-bottom:10px; }
+.tl-body { font-size:14px; color:rgba(245,240,232,0.65); line-height:1.7; margin-bottom:14px; }
+.tl-tags { display:flex; flex-wrap:wrap; gap:6px; }
+.tl-tag { font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:4px 10px; border-radius:2px; background:rgba(245,240,232,0.08); color:rgba(245,240,232,0.5); }
+.tl-tag.highlight { background:rgba(232,118,26,0.15); color:var(--saffron); }
+
+/* FOUNDER */
+.founder-section { background:var(--forest); padding:100px 64px; }
+.founder-inner { display:grid; grid-template-columns:300px 1fr; gap:64px; max-width:1100px; margin:48px auto 0; align-items:start; }
+.founder-photo-wrap { background:rgba(245,240,232,0.04); border:1px solid rgba(201,168,76,0.2); border-radius:4px; overflow:hidden; width:100%; aspect-ratio:1; display:flex; align-items:center; justify-content:center; }
+.founder-photo-wrap img { width:100%; height:100%; object-fit:cover; }
+.founder-initials { font-family:'Bebas Neue',Impact,sans-serif; font-size:72px; color:rgba(201,168,76,0.3); letter-spacing:4px; }
+.founder-quick { margin-top:20px; }
+.fq-row { display:flex; justify-content:space-between; padding:10px 0; border-bottom:1px solid rgba(245,240,232,0.08); font-size:13px; }
+.fq-label { color:rgba(245,240,232,0.4); }
+.fq-value { color:var(--snow); font-weight:600; text-align:right; }
+.founder-name-big { font-family:'Playfair Display',Georgia,serif; font-size:clamp(36px,4vw,56px); font-weight:700; color:var(--snow); margin-bottom:4px; line-height:1; }
+.founder-title-line { font-size:14px; color:var(--gold); font-weight:600; margin-bottom:32px; }
+.founder-story p { font-size:15px; color:rgba(245,240,232,0.7); line-height:1.8; margin-bottom:18px; }
+.founder-story strong { color:var(--snow); }
+.pull-quote { border-left:3px solid var(--saffron); margin:28px 0; padding:20px 24px; background:rgba(232,118,26,0.06); border-radius:0 4px 4px 0; }
+.pull-quote-text { font-family:'Playfair Display',Georgia,serif; font-style:italic; font-size:17px; color:var(--snow); line-height:1.6; margin-bottom:8px; }
+.pull-quote-attr { font-size:12px; color:var(--gold); font-weight:600; }
+.govt-list { display:flex; flex-direction:column; gap:8px; }
+.govt-item { display:flex; align-items:center; gap:12px; }
+.govt-dot { width:8px; height:8px; border-radius:50%; background:var(--gold); flex-shrink:0; }
+.govt-name { font-size:13px; color:rgba(245,240,232,0.75); }
+
+/* PLATFORM */
+.platform-section { background:var(--charcoal); padding:100px 64px; }
+.platform-header { text-align:center; margin-bottom:64px; max-width:700px; margin-left:auto; margin-right:auto; }
+.platform-header p { font-size:15px; color:rgba(245,240,232,0.6); line-height:1.7; margin-top:16px; }
+.services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; }
+.service-card { background:rgba(245,240,232,0.04); border:1px solid rgba(245,240,232,0.08); padding:36px 28px; position:relative; overflow:hidden; transition:all 0.3s; }
+.service-card::after { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--saffron); transform:scaleX(0); transition:transform 0.3s; transform-origin:left; }
+.service-card:hover { background:rgba(232,118,26,0.1); border-color:rgba(232,118,26,0.3); transform:translateY(-4px); }
+.service-card:hover::after { transform:scaleX(1); }
+.service-num { font-size:10px; font-weight:700; letter-spacing:2px; color:var(--saffron); margin-bottom:16px; opacity:0.8; }
+.service-icon { font-size:32px; display:block; margin-bottom:14px; }
+.service-name { font-family:'Playfair Display',Georgia,serif; font-size:20px; font-weight:700; color:var(--snow); margin-bottom:10px; }
+.service-desc { font-size:13px; color:rgba(245,240,232,0.5); line-height:1.7; }
+
+/* PARTNERS */
+.partners-section { background:var(--snow); padding:80px 64px; color:var(--charcoal); }
+.partners-label { font-size:11px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:var(--saffron); text-align:center; margin-bottom:40px; display:flex; align-items:center; justify-content:center; gap:10px; }
+.partners-label::before, .partners-label::after { content:''; display:block; width:32px; height:2px; background:var(--saffron); }
+.partners-strip { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; }
+.partner-pill { background:var(--forest); color:var(--snow); font-size:11px; font-weight:700; letter-spacing:1px; text-transform:uppercase; padding:10px 18px; border-radius:2px; transition:all 0.2s; }
+.partner-pill:hover { background:var(--saffron); }
+
+/* CTA */
+.cta-section { background:linear-gradient(135deg,var(--saffron) 0%,#C45A0E 100%); padding:100px 64px; position:relative; overflow:hidden; }
+.cta-section::before { content:'GLINT'; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-family:'Bebas Neue',Impact,sans-serif; font-size:280px; color:rgba(255,255,255,0.05); pointer-events:none; white-space:nowrap; line-height:1; }
+.cta-inner { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; position:relative; }
+.cta-title { font-family:'Bebas Neue',Impact,sans-serif; font-size:clamp(48px,6vw,80px); line-height:0.95; color:#fff; margin-bottom:20px; }
+.cta-desc { font-size:16px; color:rgba(255,255,255,0.8); line-height:1.7; margin-bottom:36px; }
+.cta-btns { display:flex; gap:16px; flex-wrap:wrap; }
+.btn-white { background:#fff; color:var(--saffron); padding:16px 32px; font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; border-radius:2px; text-decoration:none; border:2px solid #fff; transition:all 0.2s; }
+.btn-white:hover { background:transparent; color:#fff; }
+.btn-white-outline { background:transparent; color:#fff; padding:16px 32px; font-size:13px; font-weight:700; letter-spacing:2px; text-transform:uppercase; border-radius:2px; text-decoration:none; border:2px solid rgba(255,255,255,0.6); transition:all 0.2s; }
+.btn-white-outline:hover { border-color:#fff; background:rgba(255,255,255,0.1); }
+.contact-grid { display:flex; flex-direction:column; gap:12px; }
+.contact-block { background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); padding:16px 20px; border-radius:4px; display:flex; justify-content:space-between; align-items:center; }
+.cb-label { font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.6); }
+.cb-value { font-size:15px; font-weight:700; color:#fff; }
+.cb-value a { color:#fff; text-decoration:none; }
+
+/* FOOTER */
+footer { background:#0A1A0F; padding:48px 64px; display:flex; justify-content:space-between; align-items:center; border-top:1px solid rgba(245,240,232,0.08); }
+.footer-logo { font-family:'Bebas Neue',Impact,sans-serif; font-size:28px; letter-spacing:3px; color:var(--snow); }
+.footer-logo span { color:var(--saffron); }
+.footer-info { font-size:12px; color:rgba(245,240,232,0.35); text-align:center; line-height:1.6; }
+.footer-contact { text-align:right; font-size:12px; color:rgba(245,240,232,0.45); line-height:1.8; }
+.footer-contact a { color:var(--gold); text-decoration:none; }
+
+/* WHATSAPP */
+.wa-float { position:fixed; bottom:24px; right:24px; z-index:9999; display:flex; flex-direction:column; align-items:flex-end; gap:10px; }
+.wa-toggle { width:58px; height:58px; background:#25D366; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; border:none; box-shadow:0 4px 20px rgba(37,211,102,0.5); transition:all 0.3s; }
+.wa-toggle:hover { transform:scale(1.08); }
+.wa-toggle svg { width:28px; height:28px; fill:white; }
+.wa-panel { display:none; flex-direction:column; gap:8px; align-items:flex-end; }
+.wa-panel.open { display:flex; animation:waUp 0.25s ease; }
+@keyframes waUp { from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);} }
+.wa-label { background:var(--forest); color:var(--snow); font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; padding:6px 16px; border-radius:20px; text-align:center; }
+.wa-link { display:flex; align-items:center; gap:10px; background:#fff; color:#1a1a1a; text-decoration:none; padding:10px 16px; border-radius:24px; font-size:13px; font-weight:600; box-shadow:0 2px 12px rgba(0,0,0,0.12); transition:all 0.2s; white-space:nowrap; border:1px solid rgba(37,211,102,0.25); }
+.wa-link:hover { background:#f0fff4; transform:translateX(-4px); }
+.wa-dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; }
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;min-height:auto;} .hero-left{padding:90px 24px 36px;} .hero-right{padding:0 24px 60px;gap:12px;}
+  .stat-grid{grid-template-columns:1fr 1fr;}
+  .timeline-section,.founder-section,.platform-section,.partners-section,.cta-section{padding:60px 24px;}
+  .timeline::before{left:0;} .tl-item{grid-template-columns:1fr;} .tl-year{text-align:left;padding-left:20px;padding-right:0;margin-bottom:8px;} .tl-year::after{left:-9px;right:auto;}
+  .founder-inner{grid-template-columns:1fr;gap:36px;} .founder-photo-wrap{width:200px;height:200px;}
+  .services-grid{grid-template-columns:1fr 1fr;}
+  .cta-inner{grid-template-columns:1fr;gap:40px;}
+  footer{flex-direction:column;gap:20px;text-align:center;} .footer-contact{text-align:center;}
+  .hero-ctas,.cta-btns{flex-direction:column;} .btn-primary,.btn-outline,.btn-white,.btn-white-outline{text-align:center;}
+}
+@media(max-width:600px){
+  .hero-left{padding:80px 16px 28px;} .hero-right{padding:0 16px 48px;}
+  .timeline-section,.founder-section,.platform-section,.partners-section,.cta-section{padding:48px 16px;}
+  .services-grid{grid-template-columns:1fr;}
+  footer{padding:36px 16px;} .stat-number{font-size:40px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">GLINT <span>MEDIA</span></div>
+  <ul class="nav-links" id="mainNav">
+    <button class="nav-close-btn" onclick="document.getElementById('mainNav').classList.remove('open')" aria-label="Close">×</button>
+    <li><a href="https://www.uttarakhandsourcing.com/">Home</a></li>
+    <li><a href="https://www.uttarakhandsourcing.com/#companies">Companies</a></li>
+    <li><a href="https://www.uttarakhandsourcing.com/#sectors">Sectors</a></li>
+    <li><a href="https://www.uttarakhandsourcing.com/source-india">Expo 2026</a></li>
+    <li><a href="https://www.uttarakhandsourcing.com/source-india">Magazine</a></li>
+    <li><a href="https://www.uttarakhandsourcing.com/about.html" class="active">About</a></li>
+    <li><a href="https://wa.me/917290016544?text=I%20want%20to%20book%20a%20stall%20for%20UK%20Sourcing%20Expo%202026." target="_blank" class="nav-cta">📲 Book Stall</a></li>
+  </ul>
+  <button class="nav-menu-btn" onclick="document.getElementById('mainNav').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-mountain"></div>
+  <div class="hero-left">
+    <div class="hero-eyebrow">About the Company</div>
+    <h1 class="hero-h1">
+      GLINT<br>
+      <span class="accent">MEDIA</span><br>
+      <span class="gold">GROUP</span>
+      <span class="thin">Uttarakhand's B2B Expansion Platform</span>
+    </h1>
+    <p class="hero-desc">
+      We are <strong>not an event company.</strong> We are Uttarakhand's dedicated market entry engine — connecting North India's manufacturers with dealers, distributors, buyers, and policy access across 12 sectors. The Expo is one tool. The platform runs 365 days.
+    </p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/917290016544?text=I%20want%20to%20expand%20my%20brand%20to%20Uttarakhand.%20Please%20share%20details." class="btn-primary" target="_blank">Start Expansion Talk</a>
+      <a href="tel:+917290016544" class="btn-outline">📞 Book a Call</a>
+    </div>
+  </div>
+  <div class="hero-right fade-up">
+    <div class="stat-grid">
+      <div class="stat-card"><div class="stat-number">13</div><div class="stat-label">Years Track Record</div></div>
+      <div class="stat-card"><div class="stat-number">12</div><div class="stat-label">Sectors Covered</div></div>
+      <div class="stat-card"><div class="stat-number">1700+</div><div class="stat-label">Uttarakhand Buyers</div></div>
+      <div class="stat-card"><div class="stat-number">365</div><div class="stat-label">Days Active Platform</div></div>
+    </div>
+    <div class="exit-badge">
+      <div class="exit-icon">🏆</div>
+      <div>
+        <div class="exit-label">Successful Exit — 2013</div>
+        <div class="exit-text">Founder's previous company <strong>Exhiference Media</strong> was acquired by <strong>Messe Frankfurt</strong> — the world's largest exhibition organiser.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- TIMELINE -->
+<section class="timeline-section">
+  <div style="text-align:center;">
+    <div class="section-label" style="justify-content:center;">Company History</div>
+    <h2 class="section-title">13 YEARS.<br><span class="accent">PROVEN.</span></h2>
+  </div>
+  <div class="timeline">
+    <div class="tl-item fade-up">
+      <div class="tl-year">2011–2013</div>
+      <div class="tl-content">
+        <div class="tl-title">Exhiference Media Founded</div>
+        <div class="tl-body">Ujjwal Gupta launches Exhiference Media and builds India's dedicated environment and water technology exhibition platform. WATERTECH, WASTETECH, and POLLUTECH exhibitions established with direct government partnerships.</div>
+        <div class="tl-tags"><span class="tl-tag highlight">WATERTECH</span><span class="tl-tag highlight">WASTETECH</span><span class="tl-tag highlight">POLLUTECH</span><span class="tl-tag">Delhi & Gujarat</span></div>
+      </div>
+    </div>
+    <div class="tl-item fade-up">
+      <div class="tl-year">2013</div>
+      <div class="tl-content">
+        <div class="tl-title">Acquired by Messe Frankfurt</div>
+        <div class="tl-body">Exhiference Media's portfolio acquired by <strong>Messe Frankfurt</strong> — the world's largest trade fair organiser with €750M+ annual revenue. One of very few Indian exhibition companies to achieve an international acquisition exit.</div>
+        <div class="tl-tags"><span class="tl-tag highlight">Messe Frankfurt Acquisition</span><span class="tl-tag">International Exit</span></div>
+      </div>
+    </div>
+    <div class="tl-item fade-up">
+      <div class="tl-year">2014–2023</div>
+      <div class="tl-content">
+        <div class="tl-title">Post-Exit Exhibitions</div>
+        <div class="tl-body">After the exit, Ujjwal continues building sector-specific B2B platforms. SPORTIKA and BEAUTIKA exhibitions launched, expanding into lifestyle and consumer verticals.</div>
+        <div class="tl-tags"><span class="tl-tag">SPORTIKA</span><span class="tl-tag">BEAUTIKA</span><span class="tl-tag">B2B Platforms</span></div>
+      </div>
+    </div>
+    <div class="tl-item fade-up">
+      <div class="tl-year">2024–Now</div>
+      <div class="tl-content">
+        <div class="tl-title">Glint Media Group & UK Sourcing Expo</div>
+        <div class="tl-body">Returning to Dehradun — his home state — Ujjwal founds Glint Media Group with one mission: build Uttarakhand's permanent, year-round B2B sourcing and market entry platform for North India manufacturers.</div>
+        <div class="tl-tags"><span class="tl-tag highlight">UK Sourcing Expo 2026</span><span class="tl-tag highlight">Uttarakhand Platform</span><span class="tl-tag">MSME Directorate</span><span class="tl-tag">KGCCI</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- FOUNDER -->
+<section class="founder-section">
+  <div class="section-label">The Founder</div>
+  <h2 class="section-title">UJJWAL<br><span class="gold">GUPTA</span></h2>
+  <div class="founder-inner">
+    <div>
+      <div class="founder-photo-wrap">
+        <img src="ujjwal-photo.jpg" alt="Ujjwal Gupta — Founder & CEO, Glint Media Group" onerror="this.style.display='none';document.getElementById('founderInit').style.display='flex'">
+        <div id="founderInit" class="founder-initials" style="display:none;width:100%;height:100%;align-items:center;justify-content:center;">UG</div>
+      </div>
+      <div class="founder-quick">
+        <div class="fq-row"><span class="fq-label">Role</span><span class="fq-value">Founder & CEO</span></div>
+        <div class="fq-row"><span class="fq-label">Company</span><span class="fq-value">Glint Media Group</span></div>
+        <div class="fq-row"><span class="fq-label">Location</span><span class="fq-value">Dehradun, Uttarakhand</span></div>
+        <div class="fq-row"><span class="fq-label">Experience</span><span class="fq-value">13 Years</span></div>
+        <div class="fq-row"><span class="fq-label">Previous Exit</span><span class="fq-value">Messe Frankfurt (2013)</span></div>
+      </div>
+    </div>
+    <div class="fade-up">
+      <div class="founder-name-big">Ujjwal Gupta</div>
+      <div class="founder-title-line">Founder & CEO — Glint Media Group</div>
+      <div class="founder-story">
+        <p>Exhibition entrepreneurship is a rare craft. Building platforms that make industries move — where buyers meet sellers, policies get explained, and deals get signed in real time — requires both operational discipline and market intuition. Ujjwal Gupta has spent <strong>13 years doing exactly that.</strong></p>
+        <p>He founded <strong>Exhiference Media</strong> and built WATERTECH, WASTETECH, and POLLUTECH into recognised B2B platforms for India's environment and water technology sector, with active partnerships from the <strong>Ministry of Environment, Forest & Climate Change</strong> and the <strong>Ministry of Jal Shakti</strong>.</p>
+        <div class="pull-quote">
+          <div class="pull-quote-text">"After successfully building exhibitions in Delhi and Gujarat, I'm returning to my home state — Dehradun, Uttarakhand — to create what the state has never had: a permanent B2B sourcing platform connecting manufacturers to Uttarakhand's growing industrial ecosystem."</div>
+          <div class="pull-quote-attr">— Ujjwal Gupta, Founder & CEO</div>
+        </div>
+        <p>In 2013, Exhiference Media's portfolio was <strong>acquired by Messe Frankfurt</strong>. Today, through <strong>Glint Media Group</strong>, Ujjwal brings that expertise to Uttarakhand — a state with serious industrial growth but zero organised B2B infrastructure.</p>
+      </div>
+      <div style="margin-top:32px;">
+        <div class="section-label" style="margin-bottom:16px;">Government Partnerships (Career Track)</div>
+        <div class="govt-list">
+          <div class="govt-item"><div class="govt-dot"></div><div class="govt-name">Ministry of Environment, Forest & Climate Change</div></div>
+          <div class="govt-item"><div class="govt-dot"></div><div class="govt-name">Ministry of Jal Shakti (Water Resources)</div></div>
+          <div class="govt-item"><div class="govt-dot"></div><div class="govt-name">Central Pollution Control Board</div></div>
+          <div class="govt-item"><div class="govt-dot"></div><div class="govt-name">Gujarat Pollution Control Board</div></div>
+          <div class="govt-item"><div class="govt-dot"></div><div class="govt-name">MSME Directorate — UK Sourcing Expo 2026</div></div>
+          <div class="govt-item"><div class="govt-dot"></div><div class="govt-name">KGCCI — Kumaon Garhwal Chamber of Commerce</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PLATFORM SERVICES -->
+<section class="platform-section">
+  <div class="platform-header">
+    <div class="section-label" style="justify-content:center;">What We Do</div>
+    <h2 class="section-title">THE <span class="accent">PLATFORM</span><br><span class="gold">NOT JUST THE EXPO</span></h2>
+    <p>Six tools. One goal: get North India manufacturers into Uttarakhand markets — with dealers, distributors, policy access, and on-ground presence.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card fade-up"><div class="service-num">01</div><span class="service-icon">🤝</span><div class="service-name">Dealer Network Building</div><div class="service-desc">We identify, qualify, and connect manufacturers with active dealer prospects across Dehradun, Haridwar, Haldwani, Rudrapur, Rishikesh, and Roorkee.</div></div>
+    <div class="service-card fade-up"><div class="service-num">02</div><span class="service-icon">📦</span><div class="service-name">Distributor Appointment</div><div class="service-desc">Sector-specific distributor mapping for Uttarakhand. From FMCG super-stockists in Haldwani to pharma distributors in Haridwar — we build the channel.</div></div>
+    <div class="service-card fade-up"><div class="service-num">03</div><span class="service-icon">🗺️</span><div class="service-name">Channel Partner Mapping</div><div class="service-desc">Beyond distributors — we map the full channel: sub-dealers, institutional buyers, government procurement cells, and contractor networks.</div></div>
+    <div class="service-card fade-up"><div class="service-num">04</div><span class="service-icon">📋</span><div class="service-name">Policy & Subsidy Advisory</div><div class="service-desc">Uttarakhand's industrial policies, MSME capital subsidies, electricity rebates, SIDCUL/UIIDCL land access — decoded and actioned for your business.</div></div>
+    <div class="service-card fade-up"><div class="service-num">05</div><span class="service-icon">🏭</span><div class="service-name">On-Ground Representation</div><div class="service-desc">We act as your Uttarakhand representative — attending meetings, following up with channel partners, and keeping your brand active year-round.</div></div>
+    <div class="service-card fade-up"><div class="service-num">06</div><span class="service-icon">🎪</span><div class="service-name">UK Sourcing Expo 2026</div><div class="service-desc">October 24–25, 2026. Rangers College Ground, Dehradun. 50+ exhibitors. 1,700+ buyers. Two days of structured dealer appointments across 12 sectors.</div></div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PARTNERS -->
+<section class="partners-section">
+  <div class="partners-label">Supported & Backed By</div>
+  <div class="partners-strip">
+    <div class="partner-pill">MSME Directorate</div>
+    <div class="partner-pill">KGCCI</div>
+    <div class="partner-pill">Ministry of Environment (Past)</div>
+    <div class="partner-pill">Ministry of Jal Shakti (Past)</div>
+    <div class="partner-pill">CPCB (Past)</div>
+    <div class="partner-pill">Gujarat PCB (Past)</div>
+    <div class="partner-pill">Messe Frankfurt (Acquisition 2013)</div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- FINAL CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <div>
+      <h2 class="cta-title">READY TO ENTER<br>UTTARAKHAND?</h2>
+      <p class="cta-desc">Whether you're a manufacturer from Ludhiana, a brand from Delhi NCR, or an industrialist from Haryana — Glint Media Group is your dedicated entry point into Uttarakhand's market.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/917290016544?text=I%20want%20to%20expand%20my%20brand%20to%20Uttarakhand.%20Please%20share%20details%20from%20Glint%20Media%20Group." class="btn-white" target="_blank">💬 WhatsApp Us Now</a>
+        <a href="tel:+917290016544" class="btn-white-outline">📞 Book a Call</a>
+      </div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-block"><div class="cb-label">WhatsApp / Call</div><div class="cb-value"><a href="tel:+917290016544">+91 72900 16544</a></div></div>
+      <div class="contact-block"><div class="cb-label">Email</div><div class="cb-value"><a href="mailto:info@glintmedia.in">info@glintmedia.in</a></div></div>
+      <div class="contact-block"><div class="cb-label">Location</div><div class="cb-value">Dehradun, Uttarakhand</div></div>
+      <div class="contact-block"><div class="cb-label">Expo Date</div><div class="cb-value">Oct 24–25, 2026</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">GLINT <span>MEDIA</span></div>
+  <div class="footer-info">
+    Uttarakhand Sourcing Expo 2026<br>
+    Organized by Glint Media Group, Dehradun<br>
+    <span style="color:rgba(245,240,232,0.2);">© 2026 Glint Media Group. All rights reserved.</span>
+  </div>
+  <div class="footer-contact">
+    Dehradun, Uttarakhand<br>
+    <a href="mailto:info@glintmedia.in">info@glintmedia.in</a><br>
+    <a href="tel:+917290016544">+91 72900 16544</a>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<div class="wa-float">
+  <div class="wa-panel" id="waPanel">
+    <div class="wa-label">💬 Chat on WhatsApp</div>
+    <a class="wa-link" href="https://wa.me/917290016544?text=I%20want%20to%20expand%20my%20brand%20to%20Uttarakhand." target="_blank"><span class="wa-dot" style="background:#E8761A;"></span>Brand Expansion Enquiry</a>
+    <a class="wa-link" href="https://wa.me/917290016544?text=I%20want%20to%20book%20a%20stall%20for%20UK%20Sourcing%20Expo%202026." target="_blank"><span class="wa-dot" style="background:#25D366;"></span>Book a Stall</a>
+    <a class="wa-link" href="https://wa.me/917290016544?text=I%20want%20to%20register%20as%20a%20visitor." target="_blank"><span class="wa-dot" style="background:#C9A84C;"></span>Register as Visitor</a>
+  </div>
+  <button class="wa-toggle" onclick="document.getElementById('waPanel').classList.toggle('open')" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 0C7.16 0 0 7.16 0 16c0 2.83.74 5.49 2.03 7.8L0 32l8.47-2A15.94 15.94 0 0016 32c8.84 0 16-7.16 16-16S24.84 0 16 0zm0 29.33a13.27 13.27 0 01-6.77-1.85l-.49-.29-5.03 1.19 1.21-4.9-.32-.5A13.27 13.27 0 012.67 16C2.67 8.64 8.64 2.67 16 2.67S29.33 8.64 29.33 16 23.36 29.33 16 29.33zm7.27-9.88c-.4-.2-2.35-1.16-2.72-1.29-.36-.13-.63-.2-.89.2-.27.4-1.03 1.29-1.26 1.56-.23.27-.46.3-.86.1-.4-.2-1.68-.62-3.2-1.98-1.18-1.06-1.98-2.36-2.22-2.76-.23-.4-.02-.61.17-.81.18-.18.4-.46.6-.7.2-.23.27-.4.4-.66.13-.27.07-.5-.03-.7-.1-.2-.89-2.15-1.23-2.95-.32-.77-.65-.67-.89-.68-.23-.01-.5-.02-.76-.02-.27 0-.7.1-1.06.5-.37.4-1.4 1.36-1.4 3.32s1.43 3.85 1.63 4.11c.2.27 2.81 4.29 6.8 6.01.95.41 1.69.66 2.27.84.95.3 1.82.26 2.51.16.76-.11 2.35-.96 2.69-1.89.33-.93.33-1.73.23-1.89-.1-.17-.36-.27-.76-.46z"/></svg>
+  </button>
+</div>
+
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((en, i) => {
+    if (en.isIntersecting) { setTimeout(() => en.target.classList.add('visible'), i * 100); obs.unobserve(en.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

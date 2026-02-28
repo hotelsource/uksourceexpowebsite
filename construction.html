@@ -152,13 +152,55 @@ footer a { color: var(--gold); text-decoration: none; }
 @media (max-width: 768px) {
   nav, .breadcrumb, .hero, .content-section { padding-left: 24px; padding-right: 24px; }
 }
+
+  /* ── STANDARD NAV ── */
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 999;
+    padding: 18px 48px;
+    display: flex; justify-content: space-between; align-items: center;
+    background: rgba(26,58,42,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+  }
+  .nav-logo { font-family:'Bebas Neue',Impact,sans-serif; font-size:22px; letter-spacing:3px; color:#C9A84C; }
+  .nav-logo span { color:#E8761A; }
+  .nav-links { display:flex; gap:28px; list-style:none; align-items:center; }
+  .nav-links a { color:#F5F0E8; text-decoration:none; font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; opacity:0.8; transition:all 0.2s; }
+  .nav-links a:hover { opacity:1; color:#C9A84C; }
+  .nav-cta { background:#E8761A !important; color:#fff !important; opacity:1 !important; padding:10px 20px; border-radius:2px; }
+  .nav-cta:hover { background:#F59B3D !important; }
+  .nav-menu-btn { display:none; background:none; border:none; cursor:pointer; padding:4px; flex-direction:column; gap:5px; }
+  .nav-menu-btn span { display:block; width:24px; height:2px; background:#F5F0E8; border-radius:2px; }
+  .nav-close-btn { display:none; background:transparent; border:none; color:#F5F0E8; font-size:32px; cursor:pointer; padding:0; width:40px; height:40px; align-items:center; justify-content:center; position:absolute; top:20px; right:20px; opacity:0.7; }
+  @media (max-width:900px) {
+    nav { padding:16px 20px; }
+    .nav-menu-btn { display:flex; }
+    .nav-close-btn { display:flex !important; }
+    .nav-links { display:none; position:fixed; top:0; right:0; width:280px; height:100vh; background:linear-gradient(180deg,#1A3A2A 0%,#0F2419 100%); flex-direction:column; align-items:flex-start; padding:80px 24px 24px; gap:0; z-index:9999; box-shadow:-4px 0 24px rgba(0,0,0,0.3); }
+    .nav-links.open { display:flex !important; }
+    .nav-links li { width:100%; }
+    .nav-links a { width:100%; padding:16px 20px; border-bottom:1px solid rgba(245,240,232,0.1); font-size:15px; display:block; }
+    .nav-cta { margin-top:12px !important; text-align:center; }
+  }
 </style>
 </head>
 <body>
 
 <nav>
   <div class="nav-logo">GLINT <span>MEDIA</span></div>
-  <a href="../exhibitor-kit.html" class="nav-cta">📲 Book Stall</a>
+  <ul class="nav-links" id="mainNav">
+    <button class="nav-close-btn" onclick="document.getElementById('mainNav').classList.remove('open')" aria-label="Close">×</button>
+    <li><a href="https://www.uttarakhandsourcing.com/" onclick="document.getElementById('mainNav').classList.remove('open')">Home</a></li>
+    <li><a href="https://www.uttarakhandsourcing.com/#companies" onclick="document.getElementById('mainNav').classList.remove('open')">Companies</a></li>
+    <li><a href="https://www.uttarakhandsourcing.com/#sectors" onclick="document.getElementById('mainNav').classList.remove('open')">Sectors</a></li>
+    <li><a href="https://www.uttarakhandsourcing.com/source-india" onclick="document.getElementById('mainNav').classList.remove('open')">Expo 2026</a></li>
+    <li><a href="https://www.uttarakhandsourcing.com/source-india" onclick="document.getElementById('mainNav').classList.remove('open')">Magazine</a></li>
+    <li><a href="https://www.uttarakhandsourcing.com/about.html" onclick="document.getElementById('mainNav').classList.remove('open')">About</a></li>
+    <li><a href="https://wa.me/917290016544?text=I%20want%20to%20book%20a%20stall%20for%20UK%20Sourcing%20Expo%202026." target="_blank" class="nav-cta" onclick="document.getElementById('mainNav').classList.remove('open')">📲 Book Stall</a></li>
+  </ul>
+  <button class="nav-menu-btn" onclick="document.getElementById('mainNav').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <div class="breadcrumb">
