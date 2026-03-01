@@ -2,6 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MWNZJHXXSP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-MWNZJHXXSP');
+</script>
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
 <meta property="og:image" content="https://uksourcingexpo.netlify.app/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -1370,7 +1380,7 @@
 
   .msme-cta-btn {
     display:inline-block;
-    background:#FF6B35 !important;
+    background:var(--saffron) !important;
     color:white !important;
     padding:14px 28px;
     font-size:13px;
@@ -1381,13 +1391,13 @@
     text-decoration:none;
     transition:all 0.3s;
     margin-top:16px;
-    box-shadow:0 4px 12px rgba(255,107,53,0.4);
-    border:2px solid #FF6B35;
+    box-shadow:0 4px 12px rgba(232,118,26,0.5);
+    border:2px solid var(--saffron);
   }
   .msme-cta-btn:hover {
-    background:#FF8C42 !important;
+    background:var(--saffron-light) !important;
     transform:translateY(-2px);
-    box-shadow:0 6px 16px rgba(255,107,53,0.6);
+    box-shadow:0 6px 16px rgba(232,118,26,0.7);
   }
     nav { padding: 16px 20px; }
     .nav-links {
@@ -1694,7 +1704,7 @@
   "name": "Uttarakhand B2B Sourcing Network",
   "alternateName": ["UK Sourcing Expo", "UK Sourcing Platform", "Glint Media Sourcing Expo"],
   "url": "https://uttarakhandsourcing.com",
-  "logo": "https://uttarakhandsourcing.com/og-image.jpg",
+  "logo": {"@type": "ImageObject", "url": "https://www.uttarakhandsourcing.com/logo.png", "width": 512, "height": 512},
   "description": "Uttarakhand's permanent B2B sourcing platform connecting manufacturers, distributors, dealers, and institutional buyers across construction, hospitality, MSME, and industrial sectors. Founded by exhibition entrepreneur with proven track record of government partnerships and successful exit to Messe Frankfurt.",
   "founder": {
     "@type": "Person",
@@ -1869,13 +1879,16 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">GLINT <span>MEDIA</span></div>
+  <a href="index.html" style="display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;line-height:1.15;">
+    <span style="font-family:'DM Sans',Arial,sans-serif;font-size:19px;font-weight:700;letter-spacing:0.5px;color:#FFFFFF;">Glint Media</span>
+    <span style="font-family:'DM Sans',Arial,sans-serif;font-size:11px;font-weight:400;letter-spacing:1px;color:rgba(245,240,232,0.75);">Group</span>
+  </a>
   <ul class="nav-links" id="mainNav">
     <button class="nav-close-btn" onclick="document.getElementById('mainNav').classList.remove('open')" aria-label="Close">×</button>
     <li><a href="https://www.uttarakhandsourcing.com/" onclick="document.getElementById('mainNav').classList.remove('open')">Home</a></li>
     <li><a href="#companies" onclick="document.getElementById('mainNav').classList.remove('open')">Companies</a></li>
     <li><a href="#sectors" onclick="document.getElementById('mainNav').classList.remove('open')">Sectors</a></li>
-    <li><a href="#msme" onclick="document.getElementById('mainNav').classList.remove('open')">Expo 2026</a></li>
+    <li><a href="#msme" onclick="document.getElementById('mainNav').classList.remove('open')">MSME</a></li>
     <li><a href="https://www.uttarakhandsourcing.com/source-india.html" onclick="document.getElementById('mainNav').classList.remove('open')">Magazine</a></li>
     <li><a href="https://www.uttarakhandsourcing.com/about.html" onclick="document.getElementById('mainNav').classList.remove('open')">About</a></li>
     <li><a href="#register" class="nav-cta" onclick="document.getElementById('mainNav').classList.remove('open')">📲 Book Stall</a></li>
@@ -2477,8 +2490,8 @@
 
 <!-- MSME FINANCE ZONE -->
 <section class="msme-section" id="msme">
-  <div class="section-label">MSME Finance Zone</div>
-  <h2 class="section-title">MSME Loan Schemes Available at the Expo</h2>
+  <div class="section-label" style="color:var(--saffron);justify-content:center;font-size:13px;letter-spacing:4px;">★ MSME Finance Zone ★</div>
+  <h2 class="section-title" style="text-align:center;background:linear-gradient(90deg,var(--gold),var(--saffron),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 20px rgba(232,118,26,0.3));">MSME Loan Schemes Available at the Expo</h2>
   <p style="text-align:center;max-width:820px;margin:0 auto 48px;font-size:15px;line-height:1.75;color:rgba(245,240,232,0.7);">
     Meet lenders, check eligibility, and apply for government-backed MSME loans on-spot. From ₹50,000 MUDRA loans to ₹50 Crore project financing — all schemes explained in one place. Free consultations with MSME finance advisors.
   </p>
@@ -3557,6 +3570,7 @@ document.addEventListener('DOMContentLoaded', filterCo);
       <a href="https://www.uttarakhandsourcing.com/construction.html" style="color:rgba(245,240,232,0.35);font-size:10px;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border:1px solid rgba(245,240,232,0.08);border-radius:2px;">Construction Sector</a>
       <a href="https://www.uttarakhandsourcing.com/source-india.html" style="color:rgba(245,240,232,0.35);font-size:10px;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border:1px solid rgba(245,240,232,0.08);border-radius:2px;">Source India</a>
       <a href="https://www.uttarakhandsourcing.com/source-india-magazine.html" style="color:rgba(245,240,232,0.35);font-size:10px;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border:1px solid rgba(245,240,232,0.08);border-radius:2px;">Trade Intelligence</a>
+      <a href="https://www.uttarakhandsourcing.com/msme-finance.html" style="color:var(--saffron);font-size:10px;text-decoration:none;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border:1px solid rgba(232,118,26,0.35);border-radius:2px;font-weight:700;">★ MSME Finance</a>
     </div>
   </div>
 </footer>
