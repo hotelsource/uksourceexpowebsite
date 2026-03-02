@@ -3592,9 +3592,11 @@ document.addEventListener('DOMContentLoaded', filterCo);
     <a class="wa-link" href="https://wa.me/917290016544?text=I%20want%20to%20register%20as%20a%20buyer%20or%20visitor%20for%20UK%20Sourcing%20Expo%202026." target="_blank"><span class="wa-dot" style="background:#25D366;"></span>Register as Visitor</a>
     <a class="wa-link" href="https://wa.me/917290016544?text=Media%20and%20Press%20enquiry%20for%20UK%20Sourcing%20Expo%202026." target="_blank"><span class="wa-dot" style="background:#9B59B6;"></span>Media / Press</a>
   </div>
-<button class="wa-toggle" onclick="document.getElementById('waPanel').classList.toggle('open')" aria-label="WhatsApp">```
-Actually — simpler fix. Check if your homepage WA panel ID is `waPanel` or something different.
-
+<button class="wa-toggle"
+        onclick="document.getElementById('waPanel').classList.toggle('open')"
+        aria-label="WhatsApp">
+    WhatsApp
+</button>
 Search in `index.html` for:
 ```
 id="waPanel"    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="width:26px;height:26px;fill:white;flex-shrink:0;"><path d="M16 0C7.16 0 0 7.16 0 16c0 2.83.74 5.49 2.03 7.8L0 32l8.47-2A15.94 15.94 0 0016 32c8.84 0 16-7.16 16-16S24.84 0 16 0zm0 29.33a13.27 13.27 0 01-6.77-1.85l-.49-.29-5.03 1.19 1.21-4.9-.32-.5A13.27 13.27 0 012.67 16C2.67 8.64 8.64 2.67 16 2.67S29.33 8.64 29.33 16 23.36 29.33 16 29.33zm7.27-9.88c-.4-.2-2.35-1.16-2.72-1.29-.36-.13-.63-.2-.89.2-.27.4-1.03 1.29-1.26 1.56-.23.27-.46.3-.86.1-.4-.2-1.68-.62-3.2-1.98-1.18-1.06-1.98-2.36-2.22-2.76-.23-.4-.02-.61.17-.81.18-.18.4-.46.6-.7.2-.23.27-.4.4-.66.13-.27.07-.5-.03-.7-.1-.2-.89-2.15-1.23-2.95-.32-.77-.65-.67-.89-.68-.23-.01-.5-.02-.76-.02-.27 0-.7.1-1.06.5-.37.4-1.4 1.36-1.4 3.32s1.43 3.85 1.63 4.11c.2.27 2.81 4.29 6.8 6.01.95.41 1.69.66 2.27.84.95.3 1.82.26 2.51.16.76-.11 2.35-.96 2.69-1.89.33-.93.33-1.73.23-1.89-.1-.17-.36-.27-.76-.46z"/></svg>
