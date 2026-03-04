@@ -2156,6 +2156,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       localStorage.setItem('ukse_leads', JSON.stringify(leads));
     } catch(e){}
 
+    // SAVE TO GOOGLE SHEETS — YOUR REAL DATABASE
+    try {
+      fetch('https://script.google.com/macros/s/AKfycbzCt6t5eUdH0OVHJ1shepJfYBWNcvLziWs3zB1FVmKd3uB9mAdVbmcNGw2_ixrQLU-VSA/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(lead)
+      });
+    } catch(e){}
+
     // Fire to Meta as Lead event
     if(window.fbq) {
       fbq('track', 'Lead', {
