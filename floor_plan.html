@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<title>Uttarakhand Sourcing Expo 2026 — Floor Plan</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --red:#C0282B;--gold:#E8A020;--black:#111;
+  --bg:#13132a;--bg2:#0d0d1a;--bg3:#0a0a14;
+  --green:#2A7A3A;--orange:#D05010;--wa:#25D366;
+  --border:#222;--muted:#666;--hint:#aaa;
+}
+html,body{font-family:'Inter',sans-serif;background:var(--bg3);color:#fff;overflow-x:hidden}
+.hdr{background:var(--black);display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:2px solid var(--gold);flex-wrap:wrap}
+.hdr-home{display:flex;align-items:center;gap:10px;text-decoration:none;flex:1;min-width:120px}
+.logo{background:var(--red);color:#fff;font-size:20px;font-weight:900;width:38px;height:38px;min-width:38px;display:flex;align-items:center;justify-content:center;border-radius:6px;flex-shrink:0}
+.hdr-t{flex:1;min-width:120px}
+.hdr-t .pre{font-size:8px;letter-spacing:2px;color:var(--gold);text-transform:uppercase}
+.hdr-t h1{font-size:clamp(13px,3.5vw,20px);font-weight:900;color:#fff;line-height:1.1}
+.hdr-r{text-align:right;flex-shrink:0}
+.hdr-r .date{font-size:clamp(11px,2.5vw,15px);font-weight:800;color:var(--gold)}
+.hdr-r .venue{font-size:9px;color:var(--hint)}
+.breadcrumb{background:var(--bg3);padding:10px 14px;font-size:14px;color:var(--muted);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;min-height:40px}
+.breadcrumb a{color:var(--gold);text-decoration:none;font-weight:800;font-size:15px;display:inline-flex;align-items:center;gap:4px}
+.breadcrumb a:hover{text-decoration:underline}
+.stats{background:var(--bg3);display:flex;justify-content:space-around;padding:6px 4px;border-bottom:1px solid var(--border)}
+.stat{text-align:center;padding:2px 4px;flex:1}
+.stat .n{font-size:clamp(14px,4vw,22px);font-weight:900;line-height:1}
+.stat .l{font-size:clamp(7px,1.8vw,9px);font-weight:800;letter-spacing:0.6px;text-transform:uppercase;color:#ccc;margin-top:1px}
+.stat.bk .n{color:#4ade80}.stat.in .n{color:#fb923c}.stat.ex .n{color:#60a5fa}.stat.av .n{color:var(--hint)}.stat.tt .n{color:var(--gold)}
+.layout{display:grid;grid-template-columns:1fr 300px}
+@media(max-width:800px){.layout{grid-template-columns:1fr}}
+.floor-sec{padding:8px;background:var(--bg);overflow:hidden}
+.floor-hint{text-align:center;font-size:clamp(8px,2vw,10px);color:var(--gold);padding:3px;margin-bottom:6px;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.f3w{perspective:800px}
+.f3d{transform:rotateX(12deg);transition:transform 0.2s ease;transform-style:preserve-3d}
+@media(max-width:800px){.f3d{transform:rotateX(5deg)}}
+.fmap{background:var(--bg);border:2px solid var(--gold);border-radius:8px;padding:8px;overflow-x:auto}
+.ground{display:flex;flex-direction:column;gap:2px;min-width:560px}
+@media(max-width:600px){.ground{min-width:380px}}
+.entry-top{background:#1a0808;border:2px solid var(--red);border-radius:6px;padding:7px;text-align:center;margin-bottom:4px;display:flex;align-items:center;justify-content:space-between;gap:6px}
+.entry-top .emain{flex:1;text-align:center}
+.entry-top .etxt{font-size:clamp(9px,2vw,12px);font-weight:900;color:var(--red);letter-spacing:1.5px;text-transform:uppercase;display:block}
+.entry-top .esub{font-size:clamp(7px,1.5vw,9px);color:#888;display:block;margin-top:2px}
+.entry-top .earrow{font-size:clamp(14px,3vw,20px);color:var(--red)}
+.corner-box{border-radius:5px;padding:5px 6px;text-align:center;font-size:clamp(7px,1.4vw,9px);font-weight:700;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:56px;flex-shrink:0}
+.corner-box .ico{font-size:clamp(12px,2.5vw,15px)}
+.cb-red{background:#2a0808;border:1.5px solid #7a1a1a;color:#f87171}
+.cb-blue{background:#082040;border:1.5px solid #1a4a80;color:#60a5fa}
+.row-wrap{display:grid;grid-template-columns:32px 1fr 32px;gap:2px;align-items:stretch}
+@media(max-width:600px){.row-wrap{grid-template-columns:24px 1fr 24px}}
+.aisle-v{background:rgba(232,160,32,0.05);border:1px dashed rgba(232,160,32,0.2);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:clamp(5.5px,1.1vw,7px);font-weight:700;color:rgba(232,160,32,0.6);letter-spacing:0.8px;text-transform:uppercase;writing-mode:vertical-rl;padding:3px 1px}
+.aisle-v.flip{transform:rotate(180deg)}
+.sgrid{display:grid;grid-template-columns:repeat(12,1fr);gap:2px}
+@media(max-width:600px){.sgrid{gap:1px}}
+.walkway{display:grid;grid-template-columns:32px 1fr 32px;gap:2px;margin:2px 0}
+@media(max-width:600px){.walkway{grid-template-columns:24px 1fr 24px}}
+.walkway-center{background:rgba(232,160,32,0.04);border-top:1px dashed rgba(232,160,32,0.25);border-bottom:1px dashed rgba(232,160,32,0.25);display:flex;align-items:center;justify-content:center;padding:5px 4px;font-size:clamp(7px,1.4vw,9px);font-weight:700;color:rgba(232,160,32,0.7);letter-spacing:1px;text-transform:uppercase;text-align:center}
+.walkway-side{border-radius:3px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1px;padding:2px;font-size:clamp(6px,1.1vw,7.5px);font-weight:700;text-align:center}
+.ws-exit{background:#2a0808;border:1px solid #7a1a1a;color:#f87171}
+.ws-wc{background:#082040;border:1px solid #1a4a80;color:#60a5fa}
+.ws-green{background:#082008;border:1px solid #1a4a1a;color:#4ade80}
+.rl{text-align:center;font-size:clamp(6px,1.2vw,7.5px);font-weight:700;letter-spacing:0.8px;color:rgba(232,160,32,0.65);text-transform:uppercase;margin:1px 0;padding:1px;border-top:1px solid rgba(232,160,32,0.08)}
+.food-zone-wrap{display:grid;grid-template-columns:32px 1fr 32px;gap:2px;margin:2px 0}
+@media(max-width:600px){.food-zone-wrap{grid-template-columns:24px 1fr 24px}}
+.food-strip{background:rgba(234,179,8,0.07);border:1px dashed rgba(234,179,8,0.3);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:clamp(6px,1.1vw,7.5px);font-weight:700;color:rgba(234,179,8,0.75);writing-mode:vertical-rl;padding:3px 1px;letter-spacing:0.8px;text-transform:uppercase}
+.food-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:2px}
+.exit-bottom{background:#0f0a0a;border:2px solid #4a1a1a;border-radius:6px;padding:6px;text-align:center;margin-top:4px;display:flex;align-items:center;justify-content:space-between;gap:6px}
+.exit-bottom .emain{flex:1;text-align:center}
+.exit-bottom .etxt{font-size:clamp(8px,1.8vw,10px);font-weight:900;color:#7a2a2a;letter-spacing:1.5px;text-transform:uppercase;display:block}
+.exit-bottom .esub{font-size:clamp(6px,1.2vw,8px);color:#555;display:block;margin-top:1px}
+.stall{border-radius:3px;min-height:clamp(36px,5.5vw,50px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2px 1px;cursor:pointer;transition:transform .12s,filter .12s;position:relative;-webkit-tap-highlight-color:transparent}
+.stall:hover,.stall:active{transform:translateY(-4px) scale(1.08);filter:brightness(1.3);z-index:20}
+.stall.sel{transform:translateY(-6px) scale(1.1);z-index:30;animation:glow 1.2s ease-in-out infinite}
+@keyframes glow{0%,100%{box-shadow:0 0 0 2px var(--gold)}50%{box-shadow:0 0 0 3px var(--gold),0 4px 12px rgba(232,160,32,.5)}}
+.stall .sid{font-size:clamp(6.5px,1.3vw,9px);font-weight:800;line-height:1}
+.stall .sco{font-size:clamp(5.5px,1vw,7px);font-weight:600;line-height:1.1;margin-top:1px;word-break:break-word}
+.stall .sic{position:absolute;top:1px;left:2px;font-size:clamp(6px,1.1vw,7.5px)}
+.stall .ln{font-size:clamp(5px,.9vw,6.5px);font-weight:700;color:var(--gold);margin-top:1px;max-width:96%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;animation:nameIn .25s ease-out}
+@keyframes nameIn{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:scale(1)}}
+.s-anchor{background:#1e1e1e;border:1.5px solid #555;color:#fff}
+.s-booked{background:#0f2a18;border:1.5px solid var(--green);color:#4ade80}
+.s-interested{background:#2a1205;border:1.5px solid var(--orange);color:#fb923c}
+.s-available{background:#161628;border:1.5px solid #2a2a40;color:var(--muted)}
+.s-available:hover,.s-available:active{border-color:var(--gold);color:var(--gold)}
+.stall.sel.s-available{border-color:var(--gold);color:var(--gold);background:#1e1a0a}
+.s-food{background:#1a1a06;border:1.5px solid #4a4a10;color:#d4d430}
+.s-food:hover{border-color:var(--gold);color:var(--gold)}
+.leg{display:flex;flex-wrap:wrap;gap:3px 8px;justify-content:center;padding:4px;border-top:1px solid var(--border);background:var(--bg3)}
+.li{display:flex;align-items:center;gap:3px;font-size:clamp(8px,1.8vw,10px);color:var(--hint)}
+.lb{width:12px;height:9px;border-radius:2px;border:1.5px solid transparent;flex-shrink:0}
+.sidebar{background:var(--bg2);border-left:1px solid var(--border);display:flex;flex-direction:column}
+@media(max-width:800px){.sidebar{border-left:none;border-top:2px solid var(--border)}}
+.sbanner{background:var(--black);border-bottom:1px solid var(--border);padding:8px 10px;min-height:44px;display:flex;align-items:center;gap:6px}
+.sbadge{background:var(--gold);color:#111;font-size:9px;font-weight:800;padding:2px 8px;border-radius:8px;white-space:nowrap;flex-shrink:0}
+.sbanner-t{color:var(--muted);font-size:10px;line-height:1.3}
+.sbanner-t strong{color:#fff;display:block;font-size:11px}
+.tabs{display:grid;grid-template-columns:1fr 1fr}
+.tab{padding:10px 4px;text-align:center;cursor:pointer;font-size:clamp(10px,2vw,12px);font-weight:700;background:var(--bg3);color:var(--muted);border:none;border-bottom:2px solid #1a1a1a;transition:all .15s;font-family:inherit;-webkit-tap-highlight-color:transparent}
+.tab.active{background:var(--bg2);color:#fff;border-bottom:2px solid var(--red)}
+.panel{padding:12px;display:none;flex-direction:column}
+.panel.active{display:flex}
+.fl{font-size:clamp(8px,1.8vw,10px);font-weight:700;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:4px;display:block}
+.fld{margin-bottom:10px}
+input[type=text],input[type=tel],select{width:100%;padding:9px 10px;border:1.5px solid var(--border);border-radius:7px;font-size:clamp(12px,2.5vw,13px);outline:none;background:#111;color:#fff;font-family:inherit;transition:border .15s;-webkit-appearance:none}
+input::placeholder{color:#444}
+input:focus,select:focus{border-color:var(--gold)}
+select option{background:#111;color:#fff}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-bottom:10px}
+.ropt{border:1.5px solid var(--border);border-radius:6px;padding:6px 3px;cursor:pointer;text-align:center;background:#111;color:var(--muted);transition:all .15s;-webkit-tap-highlight-color:transparent}
+.ropt.sel{border-color:var(--gold);background:rgba(232,160,32,.1);color:var(--gold)}
+.ropt .ico{font-size:clamp(13px,3vw,16px);display:block;margin-bottom:2px}
+.ropt .lbl{font-size:clamp(7px,1.5vw,8.5px);font-weight:700;line-height:1.2}
+.stags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px}
+.stag{padding:5px 10px;border:1.5px solid var(--border);border-radius:14px;font-size:clamp(9px,2vw,11px);font-weight:600;cursor:pointer;background:#111;color:var(--muted);transition:all .12s;-webkit-tap-highlight-color:transparent}
+.stag.sel{border-color:#fff;background:#fff;color:#111}
+.live-ind{background:rgba(232,160,32,.08);border:1px solid rgba(232,160,32,.25);border-radius:6px;padding:6px 8px;font-size:clamp(9px,2vw,10px);color:var(--gold);margin-bottom:8px;display:none;align-items:center;gap:5px}
+.live-ind.show{display:flex}
+.ldot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:blink 1s ease-in-out infinite;flex-shrink:0}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.wp{background:#051a0a;border:1px solid #0f3a18;border-radius:6px;padding:7px 9px;font-size:clamp(9px,1.8vw,10px);color:#4ade80;margin:6px 0;line-height:1.5;font-family:monospace;white-space:pre-wrap;word-break:break-word;max-height:100px;overflow-y:auto}
+.btn-wa{width:100%;padding:12px;background:var(--wa);color:#fff;border:none;border-radius:8px;font-size:clamp(12px,2.5vw,14px);font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;text-decoration:none;transition:background .15s;font-family:inherit;-webkit-tap-highlight-color:transparent}
+.btn-wa:hover,.btn-wa:active{background:#1EB558}
+.btn-wa svg{width:17px;height:17px;fill:#fff;flex-shrink:0}
+.note{font-size:clamp(9px,1.8vw,10px);color:#444;text-align:center;margin-top:6px}
+.sbox{background:#111;border:1px solid var(--border);border-radius:6px;padding:8px 10px;margin-bottom:10px;font-size:clamp(9px,2vw,11px);color:var(--hint);line-height:1.4}
+.sbox strong{color:var(--gold);display:block;font-size:clamp(10px,2.2vw,12px);margin-bottom:2px}
+.ctacts{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:10px;border-top:1px solid #1a1a1a;background:var(--bg3)}
+.cc{background:#111;border:1px solid var(--border);border-radius:6px;padding:6px;text-align:center}
+.cc .ct{font-size:clamp(7px,1.5vw,8px);color:var(--muted);font-weight:700;letter-spacing:.5px;text-transform:uppercase;margin-bottom:2px}
+.cc a{font-size:clamp(9px,2vw,11px);font-weight:700;color:var(--gold);text-decoration:none}
+.footer-back{background:var(--black);border-top:1px solid var(--border);padding:18px;text-align:center}
+.footer-back a{color:var(--gold);text-decoration:none;font-size:16px;font-weight:800;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border:1.5px solid rgba(232,160,32,0.3);border-radius:8px}
+.footer-back a:hover{text-decoration:none;background:rgba(232,160,32,0.1);border-color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="hdr">
+  <a class="hdr-home" href="https://www.uttarakhandsourcing.com/" aria-label="Back to Uttarakhand Sourcing Expo homepage">
+    <div class="logo">G</div>
+    <div class="hdr-t">
+      <div class="pre">Glint Media Group Presents</div>
+      <h1>Uttarakhand Sourcing Expo 2026</h1>
+    </div>
+  </a>
+  <div class="hdr-r">
+    <div class="date">24–25 OCT 2026</div>
+    <div class="venue">Rangers College Ground, Dehradun · 100 Stalls</div>
+  </div>
+</div>
+<div class="breadcrumb">
+  <a href="https://www.uttarakhandsourcing.com/">← Home</a>
+  <span>/</span>
+  <span>Floor Plan</span>
+</div>
+<div class="stats">
+  <div class="stat bk"><div class="n">7</div><div class="l">Booked</div></div>
+  <div class="stat in"><div class="n">12</div><div class="l">Interested</div></div>
+  <div class="stat ex"><div class="n">26</div><div class="l">Expected →</div></div>
+  <div class="stat av"><div class="n">55</div><div class="l">Available</div></div>
+  <div class="stat tt"><div class="n">100</div><div class="l">Total</div></div>
+</div>
+
+<div class="layout">
+  <div class="floor-sec">
+    <div class="floor-hint">✦ Tap any stall · Your name appears live on floor plan ✦</div>
+    <div class="f3w" id="fw">
+      <div class="f3d" id="f3d">
+        <div class="fmap">
+          <div class="ground">
+
+            <div class="entry-top">
+              <div class="corner-box cb-red"><span class="ico">🚒</span><span>First Aid</span></div>
+              <div class="emain">
+                <span class="earrow">⬇⬇</span>
+                <span class="etxt">MAIN ENTRANCE</span>
+                <span class="esub">Visitor Entry Point · Rangers College Ground, Dehradun</span>
+              </div>
+              <div class="corner-box cb-blue"><span class="ico">ℹ</span><span>Info Desk</span></div>
+            </div>
+
+            <div class="row-wrap">
+              <div class="aisle-v flip">← LEFT AISLE</div>
+              <div>
+                <div class="sgrid" id="rowA"></div>
+                <div class="rl">— AISLE A · Sanitaryware / Tiles / Bath Fittings —</div>
+              </div>
+              <div class="aisle-v">RIGHT AISLE →</div>
+            </div>
+
+            <div class="walkway">
+              <div class="walkway-side ws-exit">🚪<br/><span style="font-size:6px">EXIT</span></div>
+              <div class="walkway-center">⟵ WALKWAY A–B · 3 METER WIDE ⟶</div>
+              <div class="walkway-side ws-exit">🚪<br/><span style="font-size:6px">EXIT</span></div>
+            </div>
+
+            <div class="row-wrap">
+              <div class="aisle-v flip">← LEFT AISLE</div>
+              <div>
+                <div class="sgrid" id="rowB"></div>
+                <div class="rl">— AISLE B · Commercial Kitchen / Food Equipment —</div>
+              </div>
+              <div class="aisle-v">RIGHT AISLE →</div>
+            </div>
+
+            <div class="walkway">
+              <div class="walkway-side ws-wc">🚻<br/><span style="font-size:6px">WC</span></div>
+              <div class="walkway-center" style="font-size:clamp(8px,1.6vw,10px)">⟵ &nbsp; MAIN WALKWAY · 4 METER WIDE &nbsp; ⟶</div>
+              <div class="walkway-side ws-wc">🚻<br/><span style="font-size:6px">WC</span></div>
+            </div>
+
+            <div class="row-wrap">
+              <div class="aisle-v flip">← LEFT AISLE</div>
+              <div>
+                <div class="sgrid" id="rowC"></div>
+                <div class="rl">— AISLE C · Food Processing / Packaging Machinery —</div>
+              </div>
+              <div class="aisle-v">RIGHT AISLE →</div>
+            </div>
+
+            <div class="walkway">
+              <div class="walkway-side ws-exit">🚪<br/><span style="font-size:6px">EXIT</span></div>
+              <div class="walkway-center">⟵ WALKWAY C–D · 3 METER WIDE ⟶</div>
+              <div class="walkway-side ws-exit">🚪<br/><span style="font-size:6px">EXIT</span></div>
+            </div>
+
+            <div class="row-wrap">
+              <div class="aisle-v flip">← LEFT AISLE</div>
+              <div>
+                <div class="sgrid" id="rowD"></div>
+                <div class="rl">— AISLE D · Modular Kitchen / Construction / Building —</div>
+              </div>
+              <div class="aisle-v">RIGHT AISLE →</div>
+            </div>
+
+            <div class="walkway">
+              <div class="walkway-side ws-wc">🚻<br/><span style="font-size:6px">WC</span></div>
+              <div class="walkway-center">⟵ WALKWAY D–E · 3 METER WIDE ⟶</div>
+              <div class="walkway-side ws-wc">🚻<br/><span style="font-size:6px">WC</span></div>
+            </div>
+
+            <div class="row-wrap">
+              <div class="aisle-v flip">← LEFT AISLE</div>
+              <div>
+                <div class="sgrid" id="rowE"></div>
+                <div class="rl">— AISLE E · Bakery / Café Equipment / Hospitality Tech —</div>
+              </div>
+              <div class="aisle-v">RIGHT AISLE →</div>
+            </div>
+
+            <div class="walkway">
+              <div class="walkway-side ws-exit">🚪<br/><span style="font-size:6px">EXIT</span></div>
+              <div class="walkway-center">⟵ WALKWAY E–F · 3 METER WIDE ⟶</div>
+              <div class="walkway-side ws-exit">🚪<br/><span style="font-size:6px">EXIT</span></div>
+            </div>
+
+            <div class="row-wrap">
+              <div class="aisle-v flip">← LEFT AISLE</div>
+              <div>
+                <div class="sgrid" id="rowF"></div>
+                <div class="rl">— AISLE F · Construction / Hospitality Tech / General —</div>
+              </div>
+              <div class="aisle-v">RIGHT AISLE →</div>
+            </div>
+
+            <div class="walkway">
+              <div class="walkway-side ws-green">🌿<br/><span style="font-size:6px">REST</span></div>
+              <div class="walkway-center">⟵ WALKWAY F–G · 3 METER WIDE ⟶</div>
+              <div class="walkway-side ws-green">🌿<br/><span style="font-size:6px">REST</span></div>
+            </div>
+
+            <div class="row-wrap">
+              <div class="aisle-v flip">← LEFT AISLE</div>
+              <div>
+                <div class="sgrid" id="rowG"></div>
+                <div class="rl">— AISLE G · Available / Multi-Sector —</div>
+              </div>
+              <div class="aisle-v">RIGHT AISLE →</div>
+            </div>
+
+            <div class="walkway">
+              <div class="walkway-side" style="background:#1a1208;border:1px solid #4a3808;color:#d4a020">🍽<br/><span style="font-size:6px">FOOD</span></div>
+              <div class="walkway-center" style="color:rgba(212,160,32,0.8)">⟵ FOOD COURT WALKWAY ⟶</div>
+              <div class="walkway-side" style="background:#1a1208;border:1px solid #4a3808;color:#d4a020">🍽<br/><span style="font-size:6px">FOOD</span></div>
+            </div>
+
+            <div class="food-zone-wrap">
+              <div class="food-strip">🍽 FOOD ZONE</div>
+              <div class="food-grid" id="foodRow"></div>
+              <div class="food-strip">FOOD ZONE 🍽</div>
+            </div>
+            <div class="rl" style="color:rgba(212,160,32,0.8)">— FOOD &amp; BEVERAGE ZONE · Mandatory · Open to All Visitors —</div>
+
+            <div class="walkway" style="margin-top:2px">
+              <div class="walkway-side ws-exit">🚪<br/><span style="font-size:6px">EXIT</span></div>
+              <div class="walkway-center">⟵ FINAL WALKWAY · EXIT ROUTE ⟶</div>
+              <div class="walkway-side ws-exit">🚪<br/><span style="font-size:6px">EXIT</span></div>
+            </div>
+            <div class="row-wrap">
+              <div class="aisle-v flip">← LEFT AISLE</div>
+              <div>
+                <div class="sgrid" id="rowH"></div>
+                <div class="rl">— AISLE H · Available / Multi-Sector —</div>
+              </div>
+              <div class="aisle-v">RIGHT AISLE →</div>
+            </div>
+
+            <div class="exit-bottom">
+              <div class="corner-box" style="background:#0a0a14;border:1px solid #222;color:#555"><span class="ico">📷</span><span>Media</span></div>
+              <div class="emain">
+                <span class="etxt" style="color:#7a2a2a">EXIT — THANK YOU FOR VISITING</span>
+                <span class="esub">Oct 24–25, 2026 · Rangers College Ground, Dehradun</span>
+              </div>
+              <div class="corner-box" style="background:#0a0a14;border:1px solid #222;color:#555"><span class="ico">🎫</span><span>Feedback</span></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="leg">
+      <div class="li"><div class="lb" style="background:#1e1e1e;border-color:#555"></div>Anchor★</div>
+      <div class="li"><div class="lb" style="background:#0f2a18;border-color:#2A7A3A"></div>Booked</div>
+      <div class="li"><div class="lb" style="background:#2a1205;border-color:#D05010"></div>Interested</div>
+      <div class="li"><div class="lb" style="background:#161628;border-color:#2a2a40"></div>Available</div>
+      <div class="li"><div class="lb" style="background:#1a1a06;border-color:#4a4a10"></div>Food Stall</div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sbanner" id="sb"><span class="sbanner-t">👆 Tap a stall to select it</span></div>
+    <div class="tabs">
+      <button class="tab active" onclick="sw('v')">🎟 Visit Free</button>
+      <button class="tab" onclick="sw('e')">🏪 Book Stall</button>
+    </div>
+    <div class="panel active" id="pv">
+      <div class="live-ind" id="vli"><div class="ldot"></div><span id="vlt">Live on floor plan!</span></div>
+      <div class="fld">
+        <span class="fl">I am a</span>
+        <div class="rgrid">
+          <div class="ropt sel" onclick="sr(this,'Dealer / Agent')"><span class="ico">🤝</span><span class="lbl">Dealer/Agent</span></div>
+          <div class="ropt" onclick="sr(this,'Retailer')"><span class="ico">🏪</span><span class="lbl">Retailer</span></div>
+          <div class="ropt" onclick="sr(this,'Wholesaler')"><span class="ico">📦</span><span class="lbl">Wholesaler</span></div>
+          <div class="ropt" onclick="sr(this,'Manufacturer')"><span class="ico">🏭</span><span class="lbl">Manufacturer</span></div>
+          <div class="ropt" onclick="sr(this,'Distributor')"><span class="ico">🚚</span><span class="lbl">Distributor</span></div>
+          <div class="ropt" onclick="sr(this,'Hotel / Resort Owner')"><span class="ico">🏨</span><span class="lbl">Hotel Owner</span></div>
+          <div class="ropt" onclick="sr(this,'Builder / Contractor')"><span class="ico">🏗</span><span class="lbl">Builder</span></div>
+          <div class="ropt" onclick="sr(this,'Home Owner')"><span class="ico">🏠</span><span class="lbl">Home Owner</span></div>
+          <div class="ropt" onclick="sr(this,'Café / Restaurant')"><span class="ico">☕</span><span class="lbl">Café/Rest.</span></div>
+          <div class="ropt" onclick="sr(this,'Architect / Designer')"><span class="ico">📐</span><span class="lbl">Architect</span></div>
+          <div class="ropt" onclick="sr(this,'School / Hospital / Institution')"><span class="ico">🎓</span><span class="lbl">Institution</span></div>
+          <div class="ropt" onclick="sr(this,'General Visitor')"><span class="ico">👤</span><span class="lbl">General</span></div>
+        </div>
+      </div>
+      <div class="fld"><label class="fl">Name — shows live on floor plan</label><input type="text" id="vn" placeholder="Type your name..." oninput="ni('v')" autocomplete="name"/></div>
+      <div class="fld"><label class="fl">WhatsApp Number</label><input type="tel" id="vp" placeholder="10-digit number" maxlength="10" oninput="uv()" inputmode="numeric"/></div>
+      <div class="fld"><label class="fl">City / Area</label><input type="text" id="vc" placeholder="Dehradun / Mussoorie / Haridwar..." oninput="uv()"/></div>
+      <div class="wp" id="vw"></div>
+      <a class="btn-wa" href="#" onclick="go('v',event)"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Get Free Entry Pass</a>
+      <div class="note">Free entry · No spam · Organizer contact only</div>
+    </div>
+    <div class="panel" id="pe">
+      <div class="live-ind" id="eli"><div class="ldot"></div><span id="elt">Company live on floor!</span></div>
+      <div class="sbox" id="esb"><strong>← Tap a stall from the floor plan</strong>9 sqmt · ₹6,000/sqmt+GST · Fascia · Power · Wi-Fi</div>
+      <div class="fld"><label class="fl">Your Name</label><input type="text" id="en" placeholder="Contact person" oninput="ni('e')" autocomplete="name"/></div>
+      <div class="fld"><label class="fl">Company — live on stall</label><input type="text" id="ec" placeholder="Company name..." oninput="ni('e')" autocomplete="organization"/></div>
+      <div class="fld"><label class="fl">WhatsApp</label><input type="tel" id="ep" placeholder="10-digit number" maxlength="10" oninput="ue()" inputmode="numeric"/></div>
+      <div class="fld"><label class="fl">Sector</label>
+        <select id="es" onchange="ue()">
+          <option value="">Select sector</option>
+          <option>Commercial Kitchen Equipment</option>
+          <option>Sanitaryware / Tiles / Bath Fittings</option>
+          <option>Construction &amp; Building Supplies</option>
+          <option>Interior Design / Décor / Furnishings</option>
+          <option>Bakery &amp; Café Equipment</option>
+          <option>Hospitality Tech &amp; POS</option>
+          <option>Food Processing &amp; Packaging</option>
+          <option>Hotel Amenities &amp; Toiletries</option>
+          <option>Cold Chain &amp; Refrigeration</option>
+          <option>Medical &amp; Hospital Equipment</option>
+          <option>Gym &amp; Fitness Equipment</option>
+          <option>Safety, Fire &amp; Compliance</option>
+          <option>Food &amp; Beverage Stall</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="fld"><label class="fl">Stalls</label>
+        <div class="stags">
+          <div class="stag sel" onclick="ss(this,'1 Stall')">1</div>
+          <div class="stag" onclick="ss(this,'2 Stalls')">2</div>
+          <div class="stag" onclick="ss(this,'3 Stalls')">3</div>
+          <div class="stag" onclick="ss(this,'Anchor 4+')">Anchor ⭐</div>
+        </div>
+      </div>
+      <div class="wp" id="ew"></div>
+      <a class="btn-wa" href="#" onclick="go('e',event)"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Book Stall — ₹6,000/sqmt+GST</a>
+      <div class="note">Confirmed within 2 hours on WhatsApp</div>
+    </div>
+    <div class="ctacts">
+      <div class="cc"><div class="ct">Stall Booking</div><a href="tel:+917290016544">+91 72900 16544</a></div>
+      <div class="cc"><div class="ct">Channel Partner</div><a href="tel:+919068499633">+91 90684 99633</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer-back">
+  <a href="https://www.uttarakhandsourcing.com/">← Back to Uttarakhand Sourcing Expo Home</a>
+</div>
+
+<script>
+const WA='917290016544';
+const DATA={
+  A:[{id:'A01',co:'Anchor',sc:'Sanitary',st:'anchor'},{id:'A02',co:'Aasen Industries',sc:'Sanitary',st:'booked'},{id:'A03',co:'Comaplin/Aerodis',sc:'Paints',st:'booked'},{id:'A04',co:'PJ Foods',sc:'Food',st:'interested'},{id:'A05',co:'Sun Organic',sc:'Reserved',st:'interested'},{id:'A06',co:'Nirco',sc:'Sanitary',st:'available'},{id:'A07',co:'Johnson Tiles',sc:'Tiles',st:'available'},{id:'A08',co:'Orient Bell',sc:'Sanitary',st:'available'},{id:'A09',co:'RAK Ceramics',sc:'Sanitary',st:'available'},{id:'A10',co:'Mekla India',sc:'Sanitary',st:'available'},{id:'A11',co:'',sc:'',st:'available'},{id:'A12',co:'Anchor',sc:'Sanitary',st:'anchor'}],
+  B:[{id:'B01',co:'Anchor',sc:'Kitchen',st:'anchor'},{id:'B02',co:'Duravit India',sc:'Sanitary',st:'booked'},{id:'B03',co:'Toto India',sc:'Sanitary',st:'booked'},{id:'B04',co:'Parryware',sc:'Sanitary',st:'booked'},{id:'B05',co:'Somany Bath',sc:'Sanitary',st:'booked'},{id:'B06',co:'Kajaria',sc:'Tiles',st:'available'},{id:'B07',co:'Varmora',sc:'Sanitary',st:'available'},{id:'B08',co:'Fagor India',sc:'Kitchen',st:'available'},{id:'B09',co:'Convotherm',sc:'Kitchen',st:'available'},{id:'B10',co:'Alto-Shaam',sc:'Kitchen',st:'available'},{id:'B11',co:'',sc:'',st:'available'},{id:'B12',co:'Anchor',sc:'Kitchen',st:'anchor'}],
+  C:[{id:'C01',co:'',sc:'',st:'available'},{id:'C02',co:'Manitowoc',sc:'Kitchen',st:'booked'},{id:'C03',co:'Middleby India',sc:'Kitchen',st:'booked'},{id:'C04',co:'',sc:'',st:'available'},{id:'C05',co:'SPX Flow',sc:'Food',st:'anchor'},{id:'C06',co:'Sidel India',sc:'Food',st:'anchor'},{id:'C07',co:'Cretas India',sc:'Food',st:'anchor'},{id:'C08',co:'MA India',sc:'Food',st:'anchor'},{id:'C09',co:'Synergen',sc:'Food',st:'anchor'},{id:'C10',co:'Multiwoc',sc:'Food',st:'booked'},{id:'C11',co:'',sc:'',st:'available'},{id:'C12',co:'',sc:'',st:'available'}],
+  D:[{id:'D01',co:'',sc:'',st:'available'},{id:'D02',co:'Stanley Furn.',sc:'Modular',st:'interested'},{id:'D03',co:'Royaloak Furn.',sc:'Modular',st:'interested'},{id:'D04',co:'Evok Furn.',sc:'Modular',st:'anchor'},{id:'D05',co:'Hometown',sc:'Modular',st:'interested'},{id:'D06',co:'Fabindia Furn.',sc:'Modular',st:'interested'},{id:'D07',co:'Elvy Lifestyle',sc:'Modular',st:'interested'},{id:'D08',co:'Guardian Glass',sc:'Const.',st:'anchor'},{id:'D09',co:'Schott India',sc:'Const.',st:'anchor'},{id:'D10',co:'Somany Ceramic',sc:'Ceramic',st:'anchor'},{id:'D11',co:'',sc:'',st:'available'},{id:'D12',co:'Tataria Hardware',sc:'Hardware',st:'interested'}],
+  E:[{id:'E01',co:'',sc:'',st:'available'},{id:'E02',co:'',sc:'',st:'available'},{id:'E03',co:'Bizzera India',sc:'Bakery',st:'anchor'},{id:'E04',co:'Maral Bakery',sc:'Bakery',st:'booked'},{id:'E05',co:'GEA Bakery',sc:'Bakery',st:'booked'},{id:'E06',co:'Baker Perkins',sc:'Bakery',st:'booked'},{id:'E07',co:'ZeeQ Tech',sc:'H.Tech',st:'anchor'},{id:'E08',co:'Maestrop PMS',sc:'H.Tech',st:'available'},{id:'E09',co:'Pine Labs',sc:'H.Tech',st:'available'},{id:'E10',co:'Verifone',sc:'H.Tech',st:'available'},{id:'E11',co:'',sc:'',st:'available'},{id:'E12',co:'',sc:'',st:'available'}],
+  F:[{id:'F01',co:'Anchor',sc:'Const.',st:'anchor'},{id:'F02',co:'Qutone Ceramic',sc:'Const.',st:'booked'},{id:'F03',co:'Restile',sc:'Const.',st:'interested'},{id:'F04',co:'Prime Ceramics',sc:'Const.',st:'interested'},{id:'F05',co:'Cortina',sc:'Const.',st:'interested'},{id:'F06',co:'Dr Fixit India',sc:'Const.',st:'interested'},{id:'F07',co:'NCR India',sc:'H.Tech',st:'available'},{id:'F08',co:'Ingenico India',sc:'H.Tech',st:'available'},{id:'F09',co:'PAX Technology',sc:'H.Tech',st:'available'},{id:'F10',co:'Mswipe',sc:'H.Tech',st:'available'},{id:'F11',co:'',sc:'',st:'available'},{id:'F12',co:'Anchor',sc:'General',st:'anchor'}],
+  G:[{id:'G01',co:'',sc:'',st:'available'},{id:'G02',co:'',sc:'',st:'available'},{id:'G03',co:'',sc:'',st:'available'},{id:'G04',co:'',sc:'',st:'available'},{id:'G05',co:'',sc:'',st:'available'},{id:'G06',co:'',sc:'',st:'available'},{id:'G07',co:'',sc:'',st:'available'},{id:'G08',co:'',sc:'',st:'available'},{id:'G09',co:'',sc:'',st:'available'},{id:'G10',co:'',sc:'',st:'available'},{id:'G11',co:'',sc:'',st:'available'},{id:'G12',co:'',sc:'',st:'available'}],
+  H:[{id:'H01',co:'Anchor',sc:'Multi',st:'anchor'},{id:'H02',co:'',sc:'',st:'available'},{id:'H03',co:'',sc:'',st:'available'},{id:'H04',co:'',sc:'',st:'available'},{id:'H05',co:'',sc:'',st:'available'},{id:'H06',co:'',sc:'',st:'available'},{id:'H07',co:'',sc:'',st:'available'},{id:'H08',co:'',sc:'',st:'available'},{id:'H09',co:'',sc:'',st:'available'},{id:'H10',co:'',sc:'',st:'available'},{id:'H11',co:'',sc:'',st:'available'},{id:'H12',co:'Anchor',sc:'Multi',st:'anchor'}]
+};
+const FOOD=[
+  {id:'FB1',co:'Chai & Snacks',sc:'Food',st:'food'},
+  {id:'FB2',co:'Pahadi Khana',sc:'Food',st:'food'},
+  {id:'FB3',co:'Fast Food',sc:'Food',st:'food'},
+  {id:'FB4',co:'',sc:'Available',st:'food'},
+  {id:'FB5',co:'',sc:'Available',st:'food'},
+  {id:'FB6',co:'',sc:'Available',st:'food'}
+];
+const SC={anchor:'s-anchor',booked:'s-booked',interested:'s-interested',expected:'s-available',available:'s-available',food:'s-food'};
+const SL={anchor:'Anchor ★',booked:'Booked ✓',interested:'Interested ◎',available:'Available',food:'Food Stall'};
+let sel=null,vRole='Dealer / Agent',sc='1 Stall',nt=null;
+
+function mkStall(s,c){
+  const el=document.createElement('div');
+  el.className='stall '+(SC[s.st]||'s-available');
+  el.dataset.id=s.id;
+  let h='';
+  if(s.st==='anchor')h+='<span class="sic">★</span>';
+  if(s.st==='food')h+='<span class="sic">🍽</span>';
+  h+='<div class="sid">'+s.id+'</div>';
+  if(s.co)h+='<div class="sco">'+s.co+'</div>';
+  h+='<div class="ln" id="ln-'+s.id+'"></div>';
+  el.innerHTML=h;
+  el.addEventListener('click',()=>pick(s,el));
+  c.appendChild(el);
+}
+function build(){
+  Object.keys(DATA).forEach(row=>{const c=document.getElementById('row'+row);if(c)DATA[row].forEach(s=>mkStall(s,c));});
+  const fc=document.getElementById('foodRow');if(fc)FOOD.forEach(s=>mkStall(s,fc));
+}
+function pick(s,el){
+  document.querySelectorAll('.stall').forEach(e=>e.classList.remove('sel'));
+  el.classList.add('sel');sel=s;
+  document.getElementById('sb').innerHTML='<span class="sbadge">'+s.id+'</span><div class="sbanner-t"><strong>'+(s.co||'Available Stall')+'</strong>'+(SL[s.st]||'Available')+' · '+(s.sc||'Open')+'</div>';
+  const esb=document.getElementById('esb');
+  if(esb)esb.innerHTML='<strong>Stall '+s.id+(s.co?' — '+s.co:'')+'</strong>'+(SL[s.st]||'Available')+' · '+(s.sc||'Open')+' · 9sqmt · ₹6,000/sqmt+GST';
+  uv();ue();
+  const cn=curName();if(cn)showName(cn);
+  if(window.innerWidth<=800)setTimeout(()=>document.querySelector('.sidebar').scrollIntoView({behavior:'smooth',block:'start'}),100);
+}
+function curName(){
+  if(document.getElementById('pv').classList.contains('active'))return document.getElementById('vn').value.trim();
+  return document.getElementById('ec').value.trim()||document.getElementById('en').value.trim();
+}
+function ni(t){clearTimeout(nt);nt=setTimeout(()=>uln(t),100);if(t==='v')uv();else ue();}
+function uln(type){
+  document.querySelectorAll('.ln').forEach(e=>e.textContent='');
+  let name='';
+  if(type==='v'){
+    name=document.getElementById('vn').value.trim();
+    const li=document.getElementById('vli');
+    if(name){li.classList.add('show');document.getElementById('vlt').textContent='"'+name+'" is live on floor plan!';}
+    else li.classList.remove('show');
+  }else{
+    const co=document.getElementById('ec').value.trim(),nm=document.getElementById('en').value.trim();
+    name=co||nm;
+    const li=document.getElementById('eli');
+    if(name){li.classList.add('show');document.getElementById('elt').textContent='"'+name+'" is live on floor plan!';}
+    else li.classList.remove('show');
+  }
+  if(name)showName(name);
+}
+function showName(name){
+  if(sel){const el=document.getElementById('ln-'+sel.id);if(el)el.textContent=name;}
+  else{let n=0;document.querySelectorAll('.s-available').forEach(e=>{if(n<2){const ln=document.getElementById('ln-'+e.dataset.id);if(ln){ln.textContent=name;n++;}}});}
+}
+function sw(t){
+  document.querySelectorAll('.tab').forEach((el,i)=>el.classList.toggle('active',(t==='v'&&i===0)||(t==='e'&&i===1)));
+  document.getElementById('pv').classList.toggle('active',t==='v');
+  document.getElementById('pe').classList.toggle('active',t==='e');
+  document.querySelectorAll('.ln').forEach(e=>e.textContent='');
+  document.getElementById('vli').classList.remove('show');
+  document.getElementById('eli').classList.remove('show');
+}
+function sr(el,r){document.querySelectorAll('.ropt').forEach(e=>e.classList.remove('sel'));el.classList.add('sel');vRole=r;uv();}
+function ss(el,v){document.querySelectorAll('.stag').forEach(e=>e.classList.remove('sel'));el.classList.add('sel');sc=v;ue();}
+function uv(){
+  const n=document.getElementById('vn').value||'[Your Name]',c=document.getElementById('vc').value||'[City]';
+  const sl=sel?'\nInterested in: Stall '+sel.id+(sel.co?' ('+sel.co+')':''):'';
+  document.getElementById('vw').textContent='Hi! Visitor registration\nUttarakhand Sourcing Expo 2026\n\nName: '+n+'\nCategory: '+vRole+'\nCity: '+c+sl+'\nDate: Oct 24-25, 2026\n\nPlease send free entry pass!';
+}
+function ue(){
+  const n=document.getElementById('en').value||'[Name]',c=document.getElementById('ec').value||'[Company]',s=document.getElementById('es').value||'[Sector]';
+  const sl=sel?'\nPreferred Stall: '+sel.id:'';
+  document.getElementById('ew').textContent='Hi! Stall booking\nUttarakhand Sourcing Expo 2026\n\nName: '+n+'\nCompany: '+c+'\nSector: '+s+'\nStalls: '+sc+sl+'\nOct 24-25 · Rangers College Ground\n\nShare booking details!';
+}
+function go(t,e){
+  e.preventDefault();
+  let msg;
+  if(t==='v'){
+    if(!document.getElementById('vn').value.trim()){alert('Please enter your name');return;}
+    if(document.getElementById('vp').value.length<10){alert('Please enter valid 10-digit WhatsApp number');return;}
+    msg=document.getElementById('vw').textContent;
+  }else{
+    if(!document.getElementById('en').value.trim()){alert('Please enter your name');return;}
+    if(!document.getElementById('ec').value.trim()){alert('Please enter company name');return;}
+    msg=document.getElementById('ew').textContent;
+  }
+  window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(msg),'_blank');
+}
+if(window.innerWidth>800){
+  const fw=document.getElementById('fw'),f3=document.getElementById('f3d');
+  fw.addEventListener('mousemove',e=>{
+    const r=fw.getBoundingClientRect();
+    f3.style.transform='rotateX('+(12+((e.clientY-r.top)/r.height-.5)*-4)+'deg) rotateY('+((e.clientX-r.left)/r.width-.5)*4+'deg)';
+  });
+  fw.addEventListener('mouseleave',()=>{f3.style.transform='rotateX(12deg)';});
+}
+build();uv();ue();
+</script>
+</body>
+</html>
