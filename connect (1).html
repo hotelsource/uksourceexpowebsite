@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ujjwal Gupta | UK Sourcing Expo 2026</title>
+<meta name="description" content="Connect with Ujjwal Gupta, Founder & Event Director of UK Sourcing Expo 2026. View exhibitor brochure, floor plan, pricing, book stalls and contact directly."/>
+<meta property="og:title" content="Ujjwal Gupta | UK Sourcing Expo 2026"/>
+<meta property="og:description" content="Uttarakhand's Largest B2B Procurement & Dealer Appointment Platform. Oct 24–25, Rangers College Ground, Dehradun."/>
+<meta property="og:url" content="https://www.uttarakhandsourcing.com/connect"/>
+<meta name="theme-color" content="#0a0a0a"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<!-- QR Code Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+  :root {
+    --black: #0a0a0a;
+    --black2: #111111;
+    --black3: #1a1a1a;
+    --gold: #C9A84C;
+    --gold-light: #e8c86a;
+    --gold-dim: rgba(201,168,76,0.15);
+    --white: #ffffff;
+    --white-dim: rgba(255,255,255,0.08);
+    --white-mid: rgba(255,255,255,0.55);
+    --red: #CC1F1F;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+
+  html { scroll-behavior:smooth; }
+
+  body {
+    font-family:'DM Sans',sans-serif;
+    background:var(--black);
+    color:var(--white);
+    min-height:100vh;
+    overflow-x:hidden;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity:0; transform:translateY(24px); }
+    to   { opacity:1; transform:translateY(0); }
+  }
+  @keyframes shimmer {
+    0%   { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+  @keyframes pulse-ring {
+    0%   { transform:scale(1); opacity:0.6; }
+    100% { transform:scale(1.5); opacity:0; }
+  }
+  @keyframes float {
+    0%,100% { transform:translateY(0px); }
+    50%      { transform:translateY(-6px); }
+  }
+
+  .fade-up { animation:fadeUp 0.6s ease both; }
+  .d1  { animation-delay:0.1s; }
+  .d2  { animation-delay:0.2s; }
+  .d3  { animation-delay:0.3s; }
+  .d4  { animation-delay:0.4s; }
+  .d5  { animation-delay:0.5s; }
+  .d6  { animation-delay:0.6s; }
+
+  /* ── HERO ── */
+  .hero {
+    position:relative;
+    background:var(--black2);
+    padding:48px 24px 40px;
+    text-align:center;
+    overflow:hidden;
+  }
+
+  .hero-bg {
+    position:absolute;
+    inset:0;
+    background:
+      radial-gradient(ellipse 80% 50% at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 90% 80%, rgba(204,31,31,0.06) 0%, transparent 60%);
+    pointer-events:none;
+  }
+
+  .hero-grid {
+    position:absolute;
+    inset:0;
+    background-image:
+      linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+    background-size:40px 40px;
+    pointer-events:none;
+  }
+
+  .logo-wrap {
+    position:relative;
+    z-index:2;
+    margin-bottom:24px;
+  }
+
+  .logo-wrap img {
+    height:70px;
+    width:auto;
+    filter:brightness(0) invert(1);
+    animation:float 4s ease-in-out infinite;
+  }
+
+  /* Logo text fallback if image fails */
+  .logo-text {
+    display:none;
+    font-family:'Bebas Neue',sans-serif;
+    font-size:13px;
+    letter-spacing:3px;
+    color:var(--white-mid);
+  }
+
+  .logo-wrap img.error + .logo-text { display:block; }
+
+  .tagline-badge {
+    display:inline-block;
+    background:var(--gold-dim);
+    border:1px solid rgba(201,168,76,0.3);
+    border-radius:20px;
+    padding:5px 14px;
+    font-size:10px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:600;
+    margin-bottom:20px;
+    position:relative;
+    z-index:2;
+  }
+
+  .avatar-wrap {
+    position:relative;
+    display:inline-block;
+    margin-bottom:20px;
+    z-index:2;
+  }
+
+  .avatar-ring {
+    position:absolute;
+    inset:-6px;
+    border-radius:50%;
+    border:1px solid var(--gold);
+    animation:pulse-ring 2.5s ease-out infinite;
+  }
+
+  .avatar {
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    border:2px solid var(--gold);
+    object-fit:cover;
+    object-position:top;
+    position:relative;
+    z-index:1;
+    display:block;
+  }
+
+  .hero-name {
+    font-family:'Bebas Neue',sans-serif;
+    font-size:42px;
+    letter-spacing:3px;
+    line-height:1;
+    background:linear-gradient(135deg, #ffffff 0%, var(--gold-light) 50%, #ffffff 100%);
+    background-size:200% auto;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+    animation:shimmer 4s linear infinite;
+    position:relative;
+    z-index:2;
+  }
+
+  .hero-role {
+    font-size:13px;
+    color:var(--gold);
+    font-weight:500;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-top:6px;
+    position:relative;
+    z-index:2;
+  }
+
+  .hero-desc {
+    font-size:12px;
+    color:var(--white-mid);
+    margin-top:8px;
+    max-width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.6;
+    position:relative;
+    z-index:2;
+  }
+
+  .expo-date-strip {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    margin-top:20px;
+    background:rgba(201,168,76,0.1);
+    border:1px solid rgba(201,168,76,0.2);
+    border-radius:10px;
+    padding:10px 16px;
+    position:relative;
+    z-index:2;
+  }
+
+  .expo-date-strip .dot {
+    width:6px; height:6px;
+    border-radius:50%;
+    background:var(--gold);
+    flex-shrink:0;
+  }
+
+  .expo-date-strip span {
+    font-size:12px;
+    color:var(--gold-light);
+    font-weight:500;
+  }
+
+  /* ── ACTION BUTTONS ── */
+  .actions {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    padding:20px 16px 8px;
+  }
+
+  .act-btn {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:14px 10px;
+    border-radius:14px;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:0.3px;
+    border:none;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+    transition:transform 0.15s, opacity 0.15s;
+  }
+
+  .act-btn:active { transform:scale(0.96); opacity:0.85; }
+
+  /* Ripple */
+  .act-btn .ripple {
+    position:absolute;
+    border-radius:50%;
+    background:rgba(255,255,255,0.25);
+    transform:scale(0);
+    animation:ripple-anim 0.5s linear;
+    pointer-events:none;
+  }
+  @keyframes ripple-anim {
+    to { transform:scale(4); opacity:0; }
+  }
+
+  .act-btn.call {
+    background:var(--gold);
+    color:var(--black);
+  }
+  .act-btn.whatsapp {
+    background:#25D366;
+    color:#fff;
+  }
+  .act-btn.email {
+    background:var(--white-dim);
+    border:1px solid rgba(255,255,255,0.12);
+    color:var(--white);
+    backdrop-filter:blur(10px);
+  }
+  .act-btn.website {
+    background:var(--white-dim);
+    border:1px solid rgba(255,255,255,0.12);
+    color:var(--white);
+    backdrop-filter:blur(10px);
+  }
+
+  .act-btn .icon { font-size:18px; }
+
+  /* ── GLASS CARD ── */
+  .glass-card {
+    margin:12px 16px;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:20px;
+    overflow:hidden;
+    backdrop-filter:blur(20px);
+  }
+
+  .card-header {
+    padding:14px 18px 10px;
+    border-bottom:1px solid rgba(255,255,255,0.06);
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+
+  .card-header-icon {
+    width:32px; height:32px;
+    border-radius:8px;
+    background:var(--gold-dim);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:16px;
+  }
+
+  .card-header-title {
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:var(--gold);
+  }
+
+  /* ── VIDEO ── */
+  .video-wrap {
+    position:relative;
+    padding-bottom:56.25%;
+    height:0;
+    overflow:hidden;
+  }
+
+  .video-wrap iframe {
+    position:absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    border:none;
+  }
+
+  /* ── LINK ROWS ── */
+  .link-row {
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:14px 18px;
+    text-decoration:none;
+    color:var(--white);
+    border-bottom:1px solid rgba(255,255,255,0.05);
+    transition:background 0.15s;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .link-row:last-child { border-bottom:none; }
+  .link-row:active { background:rgba(255,255,255,0.05); }
+
+  .link-row-icon {
+    width:42px; height:42px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    flex-shrink:0;
+    background:var(--gold-dim);
+  }
+
+  .link-row-text { flex:1; }
+  .link-row-label { font-size:14px; font-weight:500; }
+  .link-row-sub { font-size:11px; color:var(--white-mid); margin-top:2px; }
+  .link-row-arrow { color:var(--gold); font-size:18px; }
+
+  /* ── STALL CTA ── */
+  .stall-cta {
+    margin:12px 16px;
+    background:linear-gradient(135deg, #1a0f00 0%, #0a0a0a 50%, #1a1500 100%);
+    border:1px solid rgba(201,168,76,0.3);
+    border-radius:20px;
+    padding:28px 20px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .stall-cta::before {
+    content:'';
+    position:absolute;
+    top:-50%; left:-50%;
+    width:200%; height:200%;
+    background:radial-gradient(ellipse at center, rgba(201,168,76,0.08) 0%, transparent 60%);
+    pointer-events:none;
+  }
+
+  .stall-cta .price-tag {
+    display:inline-block;
+    background:var(--gold);
+    color:var(--black);
+    font-family:'Bebas Neue',sans-serif;
+    font-size:28px;
+    letter-spacing:2px;
+    padding:4px 20px;
+    border-radius:8px;
+    margin-bottom:16px;
+  }
+
+  .stall-cta h3 {
+    font-family:'Bebas Neue',sans-serif;
+    font-size:30px;
+    letter-spacing:2px;
+    color:var(--white);
+    margin-bottom:6px;
+  }
+
+  .stall-cta p {
+    font-size:12px;
+    color:var(--white-mid);
+    margin-bottom:20px;
+    line-height:1.6;
+  }
+
+  .book-btn {
+    display:block;
+    background:var(--gold);
+    color:var(--black);
+    text-decoration:none;
+    font-weight:700;
+    font-size:15px;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:10px;
+    position:relative;
+    overflow:hidden;
+    transition:opacity 0.2s;
+  }
+
+  .book-btn:active { opacity:0.85; }
+
+  .book-btn-outline {
+    display:block;
+    background:transparent;
+    border:1px solid rgba(201,168,76,0.4);
+    color:var(--gold);
+    text-decoration:none;
+    font-weight:600;
+    font-size:13px;
+    padding:12px;
+    border-radius:12px;
+    transition:background 0.2s;
+  }
+
+  .book-btn-outline:active { background:var(--gold-dim); }
+
+  /* ── WHY EXHIBIT ── */
+  .buyers-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+    padding:14px 18px 18px;
+  }
+
+  .buyer-chip {
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:10px;
+    padding:10px 6px;
+    text-align:center;
+    font-size:11px;
+    color:var(--white-mid);
+    font-weight:500;
+    line-height:1.3;
+  }
+
+  .buyer-chip .chip-icon { font-size:16px; display:block; margin-bottom:4px; }
+
+  /* ── SOCIAL ── */
+  .social-row {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    padding:14px 18px 18px;
+  }
+
+  .social-btn {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+    text-decoration:none;
+    padding:12px 6px;
+    border-radius:14px;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    transition:background 0.15s, transform 0.15s;
+    font-size:10px;
+    color:var(--white-mid);
+    font-weight:500;
+  }
+
+  .social-btn:active { transform:scale(0.94); background:rgba(255,255,255,0.08); }
+  .social-btn .s-icon { font-size:22px; }
+
+  /* ── QR CODE ── */
+  .qr-section {
+    margin:12px 16px;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:20px;
+    padding:24px;
+    text-align:center;
+  }
+
+  .qr-title {
+    font-size:11px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:600;
+    margin-bottom:16px;
+  }
+
+  #qrcode {
+    display:inline-block;
+    background:#fff;
+    padding:12px;
+    border-radius:12px;
+    margin-bottom:12px;
+  }
+
+  #qrcode canvas, #qrcode img { display:block; }
+
+  .qr-sub {
+    font-size:11px;
+    color:var(--white-mid);
+  }
+
+  /* ── SAVE CONTACT ── */
+  .save-btn {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin:12px 16px;
+    background:linear-gradient(135deg, var(--gold) 0%, #e8c86a 100%);
+    color:var(--black);
+    text-decoration:none;
+    font-weight:700;
+    font-size:15px;
+    padding:17px;
+    border-radius:16px;
+    transition:opacity 0.2s;
+  }
+
+  .save-btn:active { opacity:0.85; }
+  .save-btn .icon { font-size:20px; }
+
+  /* ── FOOTER ── */
+  footer {
+    padding:32px 20px 48px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.06);
+    margin-top:8px;
+  }
+
+  .footer-tagline {
+    font-family:'Bebas Neue',sans-serif;
+    font-size:22px;
+    letter-spacing:2px;
+    color:var(--gold);
+    line-height:1.2;
+    margin-bottom:12px;
+  }
+
+  .footer-sub {
+    font-size:11px;
+    color:rgba(255,255,255,0.3);
+    letter-spacing:1px;
+  }
+
+  footer a { color:var(--gold); text-decoration:none; }
+
+  /* ── ANALYTICS TOAST ── */
+  .toast {
+    position:fixed;
+    bottom:24px;
+    left:50%;
+    transform:translateX(-50%) translateY(80px);
+    background:rgba(201,168,76,0.95);
+    color:var(--black);
+    font-size:12px;
+    font-weight:600;
+    padding:10px 20px;
+    border-radius:20px;
+    transition:transform 0.3s;
+    z-index:999;
+    pointer-events:none;
+    white-space:nowrap;
+  }
+
+  .toast.show { transform:translateX(-50%) translateY(0); }
+
+  /* ── RESPONSIVE ── */
+  @media(min-width:480px) {
+    .hero { padding:60px 40px 48px; }
+    .actions { max-width:400px; margin:0 auto; }
+    .glass-card, .stall-cta, .qr-section, .save-btn { max-width:440px; margin-left:auto; margin-right:auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="logo-wrap fade-up d1">
+    <img src="https://www.uttarakhandsourcing.com/logo.png"
+         alt="UK Sourcing Expo"
+         onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"/>
+    <div class="logo-text">GLINT MEDIA GROUP · UK SOURCING EXPO</div>
+  </div>
+
+  <div class="tagline-badge fade-up d2">Connect · Source · Grow</div>
+
+  <div class="avatar-wrap fade-up d3">
+    <div class="avatar-ring"></div>
+    <img src="https://www.uttarakhandsourcing.com/ujjwal-photo.jpg"
+         alt="Ujjwal Gupta"
+         class="avatar"
+         onerror="this.style.background='#1a1a1a'"/>
+  </div>
+
+  <div class="hero-name fade-up d3">Ujjwal Gupta</div>
+  <div class="hero-role fade-up d4">Founder & Event Director</div>
+  <div class="hero-desc fade-up d4">Uttarakhand's Largest B2B Procurement &amp; Dealer Appointment Platform</div>
+
+  <div class="expo-date-strip fade-up d5">
+    <div class="dot"></div>
+    <span>24–25 Oct 2026 &nbsp;·&nbsp; Rangers College Ground, Dehradun</span>
+    <div class="dot"></div>
+  </div>
+</div>
+
+<!-- PRIMARY ACTIONS -->
+<div class="actions fade-up d5">
+  <a href="tel:+917290016544" class="act-btn call" onclick="track('call')">
+    <span class="icon">📞</span> Call Now
+  </a>
+  <a href="https://wa.me/917290016544?text=Hi%20Ujjwal%20ji%2C%20I%20got%20your%20contact%20from%20your%20digital%20card." class="act-btn whatsapp" onclick="track('whatsapp')">
+    <span class="icon">💬</span> WhatsApp
+  </a>
+  <a href="mailto:stalls@uttarakhandsourcing.com" class="act-btn email" onclick="track('email')">
+    <span class="icon">✉️</span> Email
+  </a>
+  <a href="https://www.uttarakhandsourcing.com" class="act-btn website" onclick="track('website')">
+    <span class="icon">🌐</span> Website
+  </a>
+</div>
+
+<!-- PROMO VIDEO -->
+<div class="glass-card fade-up d6">
+  <div class="card-header">
+    <div class="card-header-icon">🎥</div>
+    <div class="card-header-title">Watch Promo Video</div>
+  </div>
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/l8ymKdtblhM"
+            title="UK Sourcing Expo 2026"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe>
+  </div>
+</div>
+
+<!-- EXPO LINKS -->
+<div class="glass-card fade-up">
+  <div class="card-header">
+    <div class="card-header-icon">🏢</div>
+    <div class="card-header-title">UK Sourcing Expo 2026</div>
+  </div>
+
+  <a href="https://www.uttarakhandsourcing.com/exhibitor-kit.html" class="link-row" onclick="track('brochure')">
+    <div class="link-row-icon">📄</div>
+    <div class="link-row-text">
+      <div class="link-row-label">Exhibitor Brochure</div>
+      <div class="link-row-sub">Download kit · sectors · benefits</div>
+    </div>
+    <div class="link-row-arrow">›</div>
+  </a>
+
+  <a href="https://www.uttarakhandsourcing.com/floorplan" class="link-row" onclick="track('floorplan')">
+    <div class="link-row-icon">🏗️</div>
+    <div class="link-row-text">
+      <div class="link-row-label">View Floor Plan</div>
+      <div class="link-row-sub">100 stalls · pick your spot</div>
+    </div>
+    <div class="link-row-arrow">›</div>
+  </a>
+
+  <a href="https://www.uttarakhandsourcing.com/#pricing" class="link-row" onclick="track('pricing')">
+    <div class="link-row-icon">💰</div>
+    <div class="link-row-text">
+      <div class="link-row-label">Stall Pricing</div>
+      <div class="link-row-sub">₹54,000 + GST · 9 sqmt shell scheme</div>
+    </div>
+    <div class="link-row-arrow">›</div>
+  </a>
+
+  <a href="https://wa.me/917290016544?text=Hi%20Ujjwal%20ji%2C%20I%20want%20to%20book%20a%20stall%20at%20UK%20Sourcing%20Expo%202026." class="link-row" onclick="track('book_stall')">
+    <div class="link-row-icon">📝</div>
+    <div class="link-row-text">
+      <div class="link-row-label">Book Your Stall</div>
+      <div class="link-row-sub">₹15,000 reserves your stall number</div>
+    </div>
+    <div class="link-row-arrow">›</div>
+  </a>
+</div>
+
+<!-- STALL CTA -->
+<div class="stall-cta fade-up">
+  <div class="price-tag">₹54,000 + GST</div>
+  <h3>Book Your Stall Today</h3>
+  <p>Meet 500+ dealers, distributors & institutional buyers<br/>in just 2 days · Limited to 100 stalls only</p>
+  <a href="https://wa.me/917290016544?text=Hi%20Ujjwal%20ji%2C%20I%20want%20to%20book%20a%20stall%20at%20UK%20Sourcing%20Expo%202026." class="book-btn" onclick="track('book_whatsapp')">
+    📲 Book on WhatsApp Now
+  </a>
+  <a href="https://wa.me/917290016544?text=Hi%20Ujjwal%20ji%2C%20I%20want%20to%20register%20as%20a%20Visitor%20for%20UK%20Sourcing%20Expo%202026." class="book-btn-outline" onclick="track('visitor_reg')">
+    🎟️ Register as Visitor — Free Entry
+  </a>
+</div>
+
+<!-- WHY EXHIBIT -->
+<div class="glass-card fade-up">
+  <div class="card-header">
+    <div class="card-header-icon">🎯</div>
+    <div class="card-header-title">Who You'll Meet</div>
+  </div>
+  <div class="buyers-grid">
+    <div class="buyer-chip"><span class="chip-icon">🏨</span>Hotels &amp; Resorts</div>
+    <div class="buyer-chip"><span class="chip-icon">🏥</span>Hospitals</div>
+    <div class="buyer-chip"><span class="chip-icon">🏗️</span>Builders</div>
+    <div class="buyer-chip"><span class="chip-icon">📐</span>Architects</div>
+    <div class="buyer-chip"><span class="chip-icon">🏭</span>Industries</div>
+    <div class="buyer-chip"><span class="chip-icon">🛒</span>Retailers</div>
+    <div class="buyer-chip"><span class="chip-icon">🏛️</span>Govt. Buyers</div>
+    <div class="buyer-chip"><span class="chip-icon">📦</span>Distributors</div>
+    <div class="buyer-chip"><span class="chip-icon">🤝</span>Dealers</div>
+  </div>
+</div>
+
+<!-- SOCIAL MEDIA -->
+<div class="glass-card fade-up">
+  <div class="card-header">
+    <div class="card-header-icon">📱</div>
+    <div class="card-header-title">Follow Us</div>
+  </div>
+  <div class="social-row">
+    <a href="https://youtube.com/shorts/l8ymKdtblhM?si=lJqip1aYg_FgcD6U" class="social-btn" onclick="track('youtube')" target="_blank">
+      <span class="s-icon">▶️</span> YouTube
+    </a>
+    <a href="https://www.instagram.com/glint_media_group/" class="social-btn" onclick="track('instagram')" target="_blank">
+      <span class="s-icon">📸</span> Instagram
+    </a>
+    <a href="https://www.linkedin.com/company/112414007/" class="social-btn" onclick="track('linkedin')" target="_blank">
+      <span class="s-icon">💼</span> LinkedIn
+    </a>
+  </div>
+</div>
+
+<!-- QR CODE -->
+<div class="qr-section fade-up">
+  <div class="qr-title">📲 Scan to Share This Card</div>
+  <div id="qrcode"></div>
+  <div class="qr-sub">Share with manufacturers &amp; dealers instantly</div>
+</div>
+
+<!-- SAVE CONTACT -->
+<a href="#" id="saveContact" class="save-btn fade-up" onclick="saveVCard(event)">
+  <span class="icon">📇</span>
+  Save Contact to Phone
+</a>
+
+<!-- FOOTER -->
+<footer class="fade-up">
+  <div class="footer-tagline">One Buyer.<br/>Every Requirement.<br/>Under One Roof.</div>
+  <div class="footer-sub">
+    <a href="https://www.uttarakhandsourcing.com">uttarakhandsourcing.com</a><br/><br/>
+    +91 72900 16544 &nbsp;·&nbsp; stalls@uttarakhandsourcing.com<br/><br/>
+    © 2026 UK Sourcing Expo · Glint Media Group, Dehradun
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ── QR CODE ──
+new QRCode(document.getElementById("qrcode"), {
+  text: "https://www.uttarakhandsourcing.com/connect",
+  width: 160,
+  height: 160,
+  colorDark: "#000000",
+  colorLight: "#ffffff",
+  correctLevel: QRCode.CorrectLevel.H
+});
+
+// ── VCARD ──
+function saveVCard(e) {
+  e.preventDefault();
+  const vcard = [
+    "BEGIN:VCARD",
+    "VERSION:3.0",
+    "FN:Ujjwal Gupta",
+    "ORG:UK Sourcing Expo / Glint Media Group",
+    "TITLE:Founder & Event Director",
+    "TEL;TYPE=CELL:+917290016544",
+    "EMAIL:stalls@uttarakhandsourcing.com",
+    "URL:https://www.uttarakhandsourcing.com",
+    "ADR:;;Dehradun;Uttarakhand;;248001;India",
+    "NOTE:Organizer - UK Sourcing Expo 2026\\nRangers College Ground\\nDehradun · Oct 24-25 2026",
+    "END:VCARD"
+  ].join("\n");
+  const blob = new Blob([vcard], {type: "text/vcard"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "Ujjwal-Gupta-UKSE2026.vcf";
+  a.click();
+  URL.revokeObjectURL(url);
+  track('save_contact');
+  showToast("📇 Contact saved!");
+}
+
+// ── RIPPLE ──
+document.querySelectorAll('.act-btn, .book-btn').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    const r = document.createElement('span');
+    r.className = 'ripple';
+    const rect = this.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    r.style.cssText = `width:${size}px;height:${size}px;left:${e.clientX-rect.left-size/2}px;top:${e.clientY-rect.top-size/2}px`;
+    this.appendChild(r);
+    setTimeout(() => r.remove(), 600);
+  });
+});
+
+// ── ANALYTICS / TRACKING ──
+const _analytics = {};
+function track(action) {
+  _analytics[action] = (_analytics[action] || 0) + 1;
+  // Google Analytics (if loaded)
+  if (typeof gtag !== 'undefined') {
+    gtag('event', action, { event_category: 'digital_card', event_label: 'ukse2026' });
+  }
+  // Facebook Pixel (if loaded)
+  if (typeof fbq !== 'undefined') {
+    fbq('trackCustom', action);
+  }
+  console.log('[UKSE Analytics]', action, _analytics);
+}
+
+// Track QR scan (if ?src=qr in URL)
+if (location.search.includes('src=qr')) {
+  track('qr_scan');
+  showToast("🎯 Welcome! Scanned from QR code.");
+}
+
+// ── TOAST ──
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// ── INTERSECTION OBSERVER (fade-up on scroll) ──
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.glass-card, .stall-cta, .qr-section, .save-btn, footer').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
